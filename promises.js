@@ -12,20 +12,45 @@
 // }).catch((message)=>{
 //     console.log('not completed'+message)
 // })
-var a = new Promise((resolve,reject)=>{
-var a=2+2
-if(a==4){
-    resolve('success');
-}else{
-    reject('failure')
-}
-});
-a.then((message)=>{
-console.log('completed'+message);
-}).catch((message)=>{
-    console.log('not done'+message);
-})
+// var a = new Promise((resolve,reject)=>{
+// var a=2+2
+//  setTimeout(() => {
+//     if(a==4){
+//         resolve('success');
+//     }else{
+//         reject('failure')
+//     }
+//  }, 2000);
+// });
 
+// a.then((message)=>{
+//     console.log("yes" +message);
+// }).catch((message)=>{
+//     console.log("no" +message);
+// })
+
+const promise1 = new Promise((resolve, reject) => {
+    setTimeout(resolve, 300, "resolved");
+  }); //will be resolved after 300ms
+  
+//   const promise2 = 93; //non-promise
+  
+  const promise2 = new Promise((resolve, reject) => {
+    setTimeout(resolve, 100, "resolved2");
+  }); // will be resolved after 100ms
+  
+  const promise3 = new Promise((resolve, reject) => {
+    setTimeout(reject, 400, "rejected");
+  }); 
+
+
+  Promise.all([promise1, promise2, promise3])
+    .then((values) => {
+      console.log(values);
+    })
+    .catch((err) => {
+      console.log(err);
+    });
 
 
 

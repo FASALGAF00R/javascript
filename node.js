@@ -7,8 +7,8 @@
 // },3000)
 
 
-const path =require('path')
-const fs=require("fs")
+// const path =require('path')
+// const fs=require("fs")
 
 // fs.mkdir('./diljit',(err)=>{
 //     if(err){
@@ -31,10 +31,13 @@ const fs=require("fs")
 // file.end()
 
 
-
-
-
-
+// fs.mkdir(path.join(__dirname,"./api/n.js"),{},(err)=>{
+//     if(err){
+//         console.log("error got");
+//     }else{
+//         console.log("directory and file created");
+//     }
+// });
 
 
 
@@ -43,6 +46,26 @@ const fs=require("fs")
 // file.end()
 
 
+// const eventemitter =require('events')
+// const event=new eventemitter();
+
+// event.on('message',(data)=>{
+// console.log(data.text);
+// })
+
+
+// event.emit("message",{text:"logged in"})
+
+
+
+// const http=require('http')
+
+
+// http.createServer((req,res)=>{
+//     res.write('this is a node.js')
+//     console.log(req.url);
+//     res.end()
+// }).listen(3001,()=>console.log("server runin 3001"))
 
 
 
