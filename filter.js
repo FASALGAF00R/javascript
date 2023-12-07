@@ -6,7 +6,7 @@
 // let b=a.reduce((a,b)=>{
 // return a+b;
 // });
-// console.log(b)
+// console.log  (b)
 
 // var str = "Hello, how are you?";
 
@@ -24,3 +24,8 @@
 //     console.log(el);
 // }
 // })
+
+
+// const a=[1,2,3,4,5]
+// const b=a.filter((ele)=>ele%2==0)
+// console.log(b);

@@ -1,11 +1,10 @@
 // const a=[1,2,3,4,5]
-// const b=a.reduce((x,y)=>(x+y))
+// const b=a.reduce((x,y)=>{
+// return x+y
+// })
 // console.log(b);
-// let a=[1,2,3,4,5];
-// let b=a.reduce((a,b)=>{
-// return a+b;
-// });
-// console.log(b)
+
+
 
 // const arr=[1,2,3,4,5]
 

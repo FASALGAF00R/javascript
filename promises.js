@@ -12,6 +12,8 @@
 // }).catch((message)=>{
 //     console.log('not completed'+message)
 // })
+
+
 // var a = new Promise((resolve,reject)=>{
 // var a=2+2
 //  setTimeout(() => {
@@ -33,18 +35,18 @@ const promise1 = new Promise((resolve, reject) => {
     setTimeout(resolve, 300, "resolved");
   }); //will be resolved after 300ms
   
-//   const promise2 = 93; //non-promise
-  
-  const promise2 = new Promise((resolve, reject) => {
-    setTimeout(resolve, 100, "resolved2");
-  }); // will be resolved after 100ms
+ const promise2 = 93; //non-promise
   
   const promise3 = new Promise((resolve, reject) => {
-    setTimeout(reject, 400, "rejected");
+    setTimeout(reject, 100, "resolved2");
+  }); // will be resolved after 100ms
+  
+  const promise4 = new Promise((resolve, reject) => {
+    setTimeout(reject, 100, "rejected");
   }); 
 
 
-  Promise.all([promise1, promise2, promise3])
+  Promise.any([promise1, promise2,promise3, promise4])
     .then((values) => {
       console.log(values);
     })

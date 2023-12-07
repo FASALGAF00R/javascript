@@ -1,11 +1,13 @@
-// const stopinerval =setInterval( ()=>{
+// setInterval( ()=>{
 // console.log("your are a failure");
 // },1000)
 
-// setTimeout(()=>{
-//     clearInterval(stopinerval)
+// const c=setTimeout(()=>{
+// console.log("iiiii");
 // },3000)
 
+// clearTimeout(c)
+// console.log(`cleard ${c}`);
 
 // const path =require('path')
 // const fs=require("fs")
@@ -58,14 +60,14 @@
 
 
 
-// const http=require('http')
+//  const http=require('http')
 
 
 // http.createServer((req,res)=>{
 //     res.write('this is a node.js')
 //     console.log(req.url);
 //     res.end()
-// }).listen(3001,()=>console.log("server runin 3001"))
+// }).listen(()=>{console.log("ftdugsj 3000");})
 
 
 

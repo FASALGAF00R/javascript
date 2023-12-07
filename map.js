@@ -1,10 +1,106 @@
-// let a=[1,2,1,3,4];
-// let b=a.map((el)=>{
-//     if(el!=3&&el!=4){
-//     return el;
+// const a=[1,2,2,4,5]
+
+//     const c=a.map((num)=> num %2==0 ? num:0 )
+
+// console.log(c)
+
+
+
+
+// let a=[1,2,3,4,5];
+// let b=a.reduce((c,d)=>{
+
+//     if(d>c){
+//         return d
+//     }else{
+//         return c
 //     }
-// });
+
+// },a[0])
 // console.log(b);
+
+
+
+// call
+
+
+// const person={
+// detail() {
+//    return  this.name +""+ this.age
+// }
+// }
+
+// const c={
+//     name:"fasalu",
+//     age:8
+// }
+
+// console.log(person.detail.call(c));
+
+// apply
+// const person={
+
+//     detail (city,job) {
+//         return this.name +","+ this.age +","+city+ ","+job
+//     }
+// }
+
+// const c={
+//     name:"fff",
+//     age:5,
+// }
+
+// let g=(person.detail.apply(c,["hhh","000"]));
+
+
+// console.log(g);
+
+
+// const person={
+//     name:"fasalu",
+//     age:5,
+//     detail:function(){
+//  return this.dance +""+this.group
+//     }
+// }
+
+// const person1={
+//     dance:"uu",
+//     group:"oo",
+// }
+
+// let g=person.detail.bind(person1)
+// console.log(g());
+
+
+// d=()=>"gjhbgaj"
+// console.log(d());
+
+
+
+
+// const mymap=new Map
+
+// mymap.set('a',1)
+// mymap.set('b',2)
+// mymap.set('c',3)
+
+// console.log(mymap);
+
+// const value=mymap.get('c')
+// console.log(value);
+
+//  mymap.delete('b')
+// console.log(mymap);
+
+
+// const a=[1,22,33,33,33]
+// const c=new Set(a)
+// console.log(c);
+
+
+
+
 
 // const arr=[1,2,3,4,5]
 // const arr2=arr.map((x)=>{
@@ -42,9 +138,9 @@
 
 
 
-const a=[5,6,4,3,3,3];
-const b=a.reduce((a,b)=>(a+b))
-console.log(b);
+// const a=[5,6,4,3,3,3];
+// const b=a.reduce((a,b)=>(a+b))
+// console.log(b);
 
 
 
@@ -75,4 +171,49 @@ console.log(b);
 //     i++;
 // }
 // while(i<5);
+
+
+
+
+// deep copy shallow copy
+
+// const orginalobject={
+//     name:"fasalu",
+//     age:7,
+//     address:{
+//         city:"cherukara"
+//     }
+// }
+
+// const c=JSON.parse(JSON.stringify(orginalobject))
+
+// console.log(c.name="ggg");
+// console.log(c.address.city="kkkk");
+
+
+// console.log(orginalobject.name)
+// console.log(orginalobject.age);
+
+
+// shallow copy
+
+
+
+
+// const orginalobject={
+//     name:"fasalu",
+//     age:7,
+//     address:{
+//         city:"cherukara"
+//     }
+// }
+
+
+// const c=Object.assign(orginalobject)
+
+// console.log(c.name='iiii');
+// console.log(orginalobject.name);
+
+
+
 
