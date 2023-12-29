@@ -220,7 +220,7 @@
 // console.log(i.greet());
 
 // function * generator(){
-// let i=2;
+// let i=1;
 // while(true){
 //     yield i=i+2
 // }
@@ -320,6 +320,18 @@
 
 // const abc = [[5,4],[9,10],[5,1],[10,3]]
 
+// const a = abc.flat(Infinity)
+// for(let i=0; i<a.length; i++){
+//     if(i%2 ==0){
+//         let m = ''
+//         for(let j=0; j<a[i+1]; j++){
+//             m += a[i]
+//         }
+//         console.log(m);
+//     }
+// }
+
+
 
 
 // 5*5*5*5
@@ -330,7 +342,7 @@
 // const c=abc.findIndex(e=>e[0]===5 &&e[1]===1)
 
 
-console.log(c);
+// console.log(c);
 
 
 
@@ -426,15 +438,53 @@ console.log(c);
 // console.log(obj);
 
 
+//proxyobject
+
+// const target={
+//     name:"fasalu",
+//     age:10
+// }
+
+// const handler= {};
+
+// const proxy1=new Proxy (target,handler)
+
+// console.log(proxy1.name); 
+// console.log(proxy1.age); 
+
+
+// const obj ={
+//   name:"fasalu",
+//   age:10,
+//   detail (){
+// console.log(`hi from ${this.name}`);
+//   }  
+// }
+
+// obj.detail()
 
 
 
+// debounce
+// function a(){
+//     console.log("jiii");
+// }
+
+// let timer=setTimeout(a,1000)
+
+// console.log("timer"+ timer);
 
 
+// throttle
+
+// flatmap
+
+// const num=[1,2,3,4,5]
+
+// const c=num.flatMap(x=>[x*2,x*3])
 
 
-
-
+// console.log(c);
 
 
 

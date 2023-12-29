@@ -1,8 +1,6 @@
-// const a=[1,2,2,4,5]
-
-//     const c=a.map((num)=> num %2==0 ? num:0 )
-
-// console.log(c)
+const a=[1,2,2,4,5]
+    const c=a.map((num)=> num %2==0 ? num:0 )
+console.log(c)
 
 
 
@@ -164,13 +162,30 @@
 // console.log(a);
 
 
+
+// const arr=[1,2,3,4,5]
+// var i=0;
+// while (i<arr.length) {
+//     if(arr[i] %2 === 0){
+// console.log(arr[i]);
+
+// }
+// i++;
+// }
+
+
 // const a=[1,2,3,4,5]
 // var i=0;
 // do{
 //     console.log(a[i]);
 //     i++;
-// }
-// while(i<5);
+// }while(i<a.length)
+
+
+
+
+
+
 
 
 

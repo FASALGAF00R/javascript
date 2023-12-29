@@ -32,27 +32,52 @@
 // })
 
 const promise1 = new Promise((resolve, reject) => {
-    setTimeout(resolve, 300, "resolved");
+    setTimeout(() =>resolve, 300, "resolved");
   }); //will be resolved after 300ms
   
- const promise2 = 93; //non-promise
+//  const promise2 = 93; //non-promise
   
   const promise3 = new Promise((resolve, reject) => {
-    setTimeout(reject, 100, "resolved2");
+    setTimeout(()=>reject, 100, "resolved2");
   }); // will be resolved after 100ms
   
   const promise4 = new Promise((resolve, reject) => {
-    setTimeout(reject, 100, "rejected");
+    setTimeout(()=>reject, 100, "rejected");
   }); 
 
 
-  Promise.any([promise1, promise2,promise3, promise4])
+  Promise.race([promise1,promise3, promise4])
     .then((values) => {
       console.log(values);
     })
     .catch((err) => {
       console.log(err);
     });
+
+
+
+
+
+
+// const addition = (a, b) =>
+//   new Promise((resolve, reject) => {
+//     if (typeof a == "number" && typeof b == "number") {
+//       resolve(a + b);
+//     } else {
+//       reject("Not a Number");
+//     }
+//   });
+
+// addition(1, 5)
+//   .then((response) => {
+//     console.log(response);
+//   })
+//   .catch((err) => {
+//     console.log(err);
+//   })
+//   .finally(() => {
+//     console.log("Numbers are added");
+//   });
 
 
 
