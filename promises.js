@@ -31,28 +31,7 @@
 //     console.log("no" +message);
 // })
 
-const promise1 = new Promise((resolve, reject) => {
-    setTimeout(() =>resolve, 300, "resolved");
-  }); //will be resolved after 300ms
-  
-//  const promise2 = 93; //non-promise
-  
-  const promise3 = new Promise((resolve, reject) => {
-    setTimeout(()=>reject, 100, "resolved2");
-  }); // will be resolved after 100ms
-  
-  const promise4 = new Promise((resolve, reject) => {
-    setTimeout(()=>reject, 100, "rejected");
-  }); 
 
-
-  Promise.race([promise1,promise3, promise4])
-    .then((values) => {
-      console.log(values);
-    })
-    .catch((err) => {
-      console.log(err);
-    });
 
 
 
