@@ -1,0 +1,11 @@
+.box {
+    height : 100px;
+    width: 100px;
+    padding :50px;
+    margin: 30px;
+    border: 10px solid black;
+    background-color: aqua;
+}
+
+/* 1 em =16px
+rem,% */
