@@ -1,9 +1,9 @@
-// function addition(a,b){
-// return a+b;
+// function addition(a, b) {
+//     return a + b;
 // }
-// var result =addition.call(null,3,4);
+// var result = addition.call(null, 3, 4);
 // console.log(result);
-// function greet(name){
+// function greet(name) {
 //     console.log('hello,${name}!');
 // }
 // greet.apply(null, ['John']);
@@ -27,3 +27,6 @@
 // }
 // while(i<a.length);
 // console.log(sum);
+
+
+

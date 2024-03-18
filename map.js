@@ -1,6 +1,6 @@
-const a=[1,2,2,4,5]
-    const c=a.map((num)=> num %2==0 ? num:0 )
-console.log(c)
+// const a=[1,2,2,4,5]
+//     const c=a.map((num)=> num %2==0 ? num:0 )
+// console.log(c)
 
 
 
@@ -228,6 +228,20 @@ console.log(c)
 
 // console.log(c.name='iiii');
 // console.log(orginalobject.name);
+
+
+const a =[3,4,5,2,1]
+var s=a[0]
+var s2=0
+for(var i=0;i<a.length;i++){
+    if(a[i]<s){
+        s=a[i]
+    }
+    
+}
+console.log(s);
+
+
 
 
 

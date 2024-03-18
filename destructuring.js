@@ -577,5 +577,20 @@
 // console.log(arr)
 
 
-  
 
+// const adventurer = {
+// 	name: 'Alice',
+// 	cat: {
+// 	  name: 'Dinah',
+// 	},
+//   };
+
+
+//   const dogName = adventurer.dog?.name;
+// console.log(dogName);
+
+const a = {
+	name:'fasal'
+}
+
+console.log(a.name); 
