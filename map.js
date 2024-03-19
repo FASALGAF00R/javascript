@@ -230,19 +230,30 @@
 // console.log(orginalobject.name);
 
 
-const a =[3,4,5,2,1]
-var s=a[0]
-var s2=0
-for(var i=0;i<a.length;i++){
-    if(a[i]<s){
-        s=a[i]
+// const a =[3,4,5,2,1]
+// var s=a[0]
+// var s2
+// for(let i in a){
+// if(a[i] >s){
+//     s2=s;
+//     s=a[i]
+// }else if(s < s2 && s!= s2){
+//     s2 = a[i]
+// }
+
+// }
+// console.log(s);
+// console.log(s2);
+
+
+const b = [6, 8, 8, 4, 1]
+const target=8
+var count=0
+    for(let i in b){
+        if(b[i]===target){
+            count++
+        }
     }
-    
-}
-console.log(s);
-
-
-
-
+    console.log(count);
 
 
