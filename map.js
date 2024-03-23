@@ -2,6 +2,8 @@
 //     const c=a.map((num)=> num %2==0 ? num:0 )
 // console.log(c)
 
+const { log } = require("console");
+
 
 
 
@@ -245,10 +247,82 @@
 // console.log(s);
 // console.log(s2);
 
-const b = [1,2,3,4,5]
-for (let i =b.length-1 ; i >=0; i--) { 
-    console.log(b[i]);
-}
+// const b = [1,2,3,4,5]
+// for (let i =b.length-1 ; i >=0; i--) { 
+//     console.log(b[i]);
+// }
+
+// const v=[1,2,2,3,4]
+// var avg
+// for(let i=0;i<v.length;i++){
+//     var flag=0
+//     for(let j=0;j<v.length;j++){
+//         if(v[i]==v[j]&&i!=j){
+//             flag ++
+//         }
+//     }
+//     if(flag==0){
+//             var sum=0
+//             sum=sum+v[i]
+//             console.log(sum)
+
+            // avg=sum/flag
+            // console.log(avg)
+    //     }
+    // }
 
 
 
+// let count=10;
+// function counddown(){
+//     console.log(count);
+//     count --;
+//     if(count>=0){
+//         setTimeout(counddown,1000)
+//     }
+// }
+// counddown()
+
+// const c=[1,3,4,5,6]
+// let i=0;
+// while(i<c.length){
+//     console.log(c[i]);
+//     i++
+// }
+// let num=1;
+// do{
+//     if(num%2!=0){
+//         console.log(num);
+//     }
+//     num ++
+// }while(num<=10)
+
+
+// let day='p'
+// switch(day){
+// case 'm':
+// console.log("correct");
+// break;
+// case'y':
+// console.log("correct");
+// break;
+// default:
+//     console.log("wrong");
+// }
+
+// let number = 4;
+
+// switch (number % 3) {
+//   case 0:
+//     console.log(`${number} is divisible by 3`);
+//     break;
+//   default:
+//     console.log(`${number} is not divisible by 3`);
+// }
+
+
+var x=10
+
+    var x=2
+
+console.log(x);

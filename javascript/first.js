@@ -4,6 +4,8 @@
 //     details: function(){
 //         console.log(this.name,this.age);
 
+const { log } = require("util")
+
 //     }
 // }
 // person.details()
@@ -14,6 +16,13 @@
 // person.details.apply(['person2'])
 
 
-const b=[1,2,3,4,5];
-const a=b.filter((ele)=>(ele%2==0))
-console.log(a);
+// const b=[1,2,3,4,5];
+// const a=b.filter((ele)=>(ele%2==0))
+// console.log(a);
+
+
+let x,y,c
+x=8
+y=9
+console.log(x+y);
+
