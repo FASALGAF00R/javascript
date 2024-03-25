@@ -266,10 +266,10 @@ const { log } = require("console");
 //             sum=sum+v[i]
 //             console.log(sum)
 
-            // avg=sum/flag
-            // console.log(avg)
-    //     }
-    // }
+// avg=sum/flag
+// console.log(avg)
+//     }
+// }
 
 
 
@@ -321,8 +321,31 @@ const { log } = require("console");
 // }
 
 
-var x=10
+// var x=10
 
-    var x=2
+//     var x=2
 
-console.log(x);
+// console.log(x);
+
+// prime number find
+
+const a = [1, 2, 3, 4, 5]
+
+const findprime = (a) => {
+    let sum=0
+    for (let i = 0; i < a.length; i++) {
+        let flag = 0
+        for (let j = 0; j <= a.length; j++) {
+            if (a[i] % j == 0) {
+                flag++;
+            }
+        }
+        if (flag == 2) {
+            sum=sum+a[i]
+        }
+    }
+    return sum
+}
+
+let c=findprime(a);
+console.log(c);
