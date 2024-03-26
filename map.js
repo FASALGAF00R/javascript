@@ -327,25 +327,41 @@ const { log } = require("console");
 
 // console.log(x);
 
-// prime number find
 
-const a = [1, 2, 3, 4, 5]
+// for(var i = 0; i<10; i++){
+//     setTimeout(() => {
+//         console.log(i)
+//     },1000*i)
+// }
 
-const findprime = (a) => {
-    let sum=0
-    for (let i = 0; i < a.length; i++) {
-        let flag = 0
-        for (let j = 0; j <= a.length; j++) {
-            if (a[i] % j == 0) {
-                flag++;
-            }
-        }
-        if (flag == 2) {
-            sum=sum+a[i]
-        }
-    }
-    return sum
-}
 
-let c=findprime(a);
-console.log(c);
+// for(let i = 0; i<10; i++){
+//     setTimeout(() => {
+//         console.log(i)
+//     },1000*i)
+// }
+
+
+// var s="d"
+//  let d='o'
+// console.log(s);
+
+
+// for(let i=0;i<10;i++){}
+
+// console.log(i);
+
+// function a() {
+//     let i = 7;
+//     function c() {
+//         console.log(i);
+//     }
+//     c()
+// }
+// a();
+
+console.log(e);
+var e=2
+console.log(e);
+
+

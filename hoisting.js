@@ -20,11 +20,20 @@
 // console.log(b);
 // //filter
 
-hi()
-console.log('a');
-let a=1;
-function hi(){
-    console.log("good")
-}
 // hi()
 // console.log(a);
+// var a=1;
+// function hi(){
+//     console.log("good")
+// }
+// hi()
+// console.log(a);
+
+// console.log(a);
+// var a=10
+// var a=9;
+// console.log(a);
+
+
+
+

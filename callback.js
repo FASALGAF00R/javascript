@@ -1,12 +1,3 @@
-// console.log('hi');
-// document.getElementById('button').onclick = fasalu;
-// function fasalu(arg){
-// console.log(arg);
-// }
-// // fasalu(10)
-// console.log('hi');
-
-
 
 // }
 // function multiply(a,b,callback) {
@@ -57,14 +48,85 @@
 // console.log(mySecond());
 
 
-// function a(callback) {
-//     var c = 10;
-//     return callback(); // calling the callback function and returning its result
+// function* generating(){
+//     yield 1
+//     yield 2
+//     yield 3
+//     yield 4
+
 // }
 
-// function b() {
-//     var d = 3;
-//     return d;
+
+// const generator=generating()
+
+// console.log(generator.next().value);
+// console.log(generator.next().value);
+// console.log(generator.next().value);
+
+
+// function a(s,call){
+//     console.log("ji"+s);
+//     call()
 // }
 
-// console.log(a(b)); // This will output 3
+// function b(){
+//     console.log("hiu");
+// }
+
+// a(3,b)
+
+
+
+
+
+// function a(x) {
+//     return function (y) {
+//         return x + y
+//     }
+// }
+
+// const e=a(2)
+
+// console.log(e(4));
+
+
+
+
+// function a(a){
+//     return function(b){
+//         return function(d){
+//             return a+b+d
+//         }
+//     }
+
+// }
+
+// console.log(a(1)(2)(3));
+
+
+// function a(c,d){
+//     return {
+//         c,
+//         d,
+//     };
+// }
+
+// const person1=a("fa",3)
+// console.log(person1);
+
+//   (function (){
+//     console.log("ko");
+//   })()
+
+
+// function a(...c){
+//     console.log(c,";;");
+
+// }
+
+// a(1,2,3,4)
+
+
+
+
+

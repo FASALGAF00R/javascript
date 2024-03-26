@@ -1,17 +1,38 @@
-// let a = new promise ((resolve,reject)=>{
-//     let a=1+1
-//     if (a==2){
-//         resolve('success');
-//     }else{
-//         reject('failure');
-//     }
-// });
+let a = new Promise ((resolve,reject)=>{
+    let a=1+7
+    if (a==2){
+        resolve('success');
+    }else{
+        reject('failure');
+    }
+});
 
 // a.then((message)=>{
 //     console.log('completed'+message)
 // }).catch((message)=>{
 //     console.log('not completed'+message)
 // })
+
+a.then((message)=>{
+    console.log('yes'+message);
+}).catch((message)=>{
+    console.log("not"+message);
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // var a = new Promise((resolve,reject)=>{

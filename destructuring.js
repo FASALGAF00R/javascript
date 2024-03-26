@@ -589,8 +589,25 @@
 //   const dogName = adventurer.dog?.name;
 // console.log(dogName);
 
-const a = {
-	name:'fasal'
-}
+// const a = {
+// 	name:'fasal'
+// }
 
-console.log(a.name); 
+// console.log(a.name); 
+
+// const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+// console.log(person['firstName'],person['lastName']);
+
+
+
+//   const person ={
+// 	firstname:'fasalu',
+// 	lastname:'gafoor',
+// 	fullName:function(){
+// 		return this.firstname+''+this.lastname
+// 	}
+
+//   }
+//   console.log(person.fullName());
+
+
