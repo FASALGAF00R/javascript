@@ -1,6 +1,7 @@
 // const sum=(x,y)=>console.log(x+y);
 // sum(20,50);
 
+const { log } = require("util")
 
 // const sum=()=>4+3;
 // console.log(sum());
@@ -94,3 +95,12 @@
 
 
 // console.log(0.1 + 0.2 === 0.3);
+
+
+// const obj={
+//     name:'fsalu',
+//     person:()=>{
+//         console.log(`my name is ${this.name}`);
+//     }
+// }
+// obj.person()

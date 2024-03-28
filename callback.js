@@ -128,5 +128,18 @@
 
 
 
+const target={
+    name:'fasalu',
+    age:19
+}
 
+const handler={
+    get(target,prop,receiver){
+        return "suui"
+    }
+}
 
+const proxy1=new Proxy(target,handler)
+
+console.log(proxy1.age);
+console.log(proxy1.name);

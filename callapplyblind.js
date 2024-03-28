@@ -1,12 +1,63 @@
-// function addition(a, b) {
-//     return a + b;
-// }
-// var result = addition.call(null, 3, 4);
-// console.log(result);
 // function greet(name) {
-//     console.log('hello,${name}!');
+//     console.log(`Hello, ${name}! My name is ${this.name}.`);
+//   }
+  
+//   const person = { name: "Alice" };
+  
+//   greet.call(person, "Bob"); 
+
+
+
+// function greet(name) {
+//     console.log(`Hello, ${name}! My name is ${this.name}.`);
+//   }
+  
+//   const person = { name: "Alice" };
+  
+//   greet.apply(person, ["Bob"]); 
+  
+
+
+// function greet(name) {
+//     console.log(`Hello, ${name}! My name is ${this.name}.`);
+//   }
+  
+//   const person = { name: "Alice" };
+  
+//   let c=greet.bind(person); 
+// c("Bob")
+
+
+
+
+
+
+
+
+
+
+
+
+// function greet(name) {
+//     console.log(`hello,${name}!`);
 // }
 // greet.apply(null, ['John']);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // sum=0;
 // var i=0;
