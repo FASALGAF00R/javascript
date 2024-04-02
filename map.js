@@ -2,9 +2,6 @@
 //     const c=a.map((num)=> num %2==0 ? num:0 )
 // console.log(c)
 
-const { log } = require("console");
-
-
 
 
 // let a=[1,2,3,4,5];
@@ -99,9 +96,6 @@ const { log } = require("console");
 // console.log(c);
 
 
-
-
-
 // const arr=[1,2,3,4,5]
 // const arr2=arr.map((x)=>{
 //     return x*2
@@ -183,15 +177,6 @@ const { log } = require("console");
 //     i++;
 // }while(i<a.length)
 
-
-
-
-
-
-
-
-
-
 // deep copy shallow copy
 
 // const orginalobject={
@@ -213,9 +198,6 @@ const { log } = require("console");
 
 
 // shallow copy
-
-
-
 
 // const orginalobject={
 //     name:"fasalu",
@@ -312,7 +294,7 @@ const { log } = require("console");
 
 // let number = 4;
 
-// switch (number % 3) {
+// switch (number % 4) {
 //   case 0:
 //     console.log(`${number} is divisible by 3`);
 //     break;
@@ -321,11 +303,45 @@ const { log } = require("console");
 // }
 
 
-// var x=10
+// let x=10
+// {
 
-//     var x=2
+//     let x=2
+
+// }
 
 // console.log(x);
+
+
+// var x = 10;
+
+// function outer() {
+//   var x = 20;
+
+//   console.log(x); // 20
+// }
+
+// outer();
+
+// console.log(x); // 10
+
+
+
+
+
+
+// function calculateVolume(length) {
+//     return function (breadth) {
+//         return function (height) {
+//             return length * breadth * height;
+//         }
+//     }
+// }
+// console.log(calculateVolume(4)(5)(6));
+
+
+
+
 
 
 // for(var i = 0; i<10; i++){
@@ -360,8 +376,8 @@ const { log } = require("console");
 // }
 // a();
 
-console.log(e);
-var e=2
-console.log(e);
+// console.log(e);
+// var e=2
+// console.log(e);
 
 

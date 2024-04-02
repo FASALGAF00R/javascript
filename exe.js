@@ -1,12 +1,10 @@
-// var name="fasalgafoor";
-// console.log("name");
-
 
 //  const fs=require('fs')
 
 // for(let i=1;i<11;i++){
+//     let count =1
 //     setTimeout(() => {
-//         fs.appendFile('txt.txt',i+'x'+i+'='+i*i+'\n',(err)=>{
+//         fs.appendFile('dly.txt',i+'x'+count+'='+i*count+'\n',(err)=>{
 //             if(err)
 //                 console.log(err);
             
@@ -41,23 +39,23 @@
 
 
 
-let a = new Promise(function(resolve,reject){
-    const x=10;
-    const y=6;
-    if(x>y){
-        resolve()
-    }else{
-        reject()
-    }
- });
+// let a = new Promise(function(resolve,reject){
+//     const x=10;
+//     const y=6;
+//     if(x>y){
+//         resolve()
+//     }else{
+//         reject()
+//     }
+//  });
  
- a.
- then(function(){
-     console.log('success')
- }).
- catch(function(){
-     console.log('error got')
- })
+//  a.
+//  then(function(){
+//      console.log('success')
+//  }).
+//  catch(function(){
+//      console.log('error got')
+//  })
 
 
 // const person={

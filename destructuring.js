@@ -11,15 +11,6 @@
 // console.log(firstname);
 // console.log(age);
 
-// const pesron={
-//     firstname:"fasal",
-//     age:10
-
-// }
-// const {firstname,age}=pesron;
-// console.log(firstname);
-// console.log(age);
-
 
 // const alphabets={
 //     "":1,

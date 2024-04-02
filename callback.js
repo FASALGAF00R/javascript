@@ -128,18 +128,30 @@
 
 
 
-const target={
-    name:'fasalu',
-    age:19
-}
+// const target={
+//     name:'fasalu',
+//     age:19
+// }
 
-const handler={
-    get(target,prop,receiver){
-        return "suui"
-    }
-}
+// const handler={
+//     get(target,prop,receiver){
+//         return "suui"
+//     }
+// }
 
-const proxy1=new Proxy(target,handler)
+// const proxy1=new Proxy(target,handler)
 
-console.log(proxy1.age);
-console.log(proxy1.name);
+// console.log(proxy1.age);
+// console.log(proxy1.name);
+
+
+
+// function a(y){
+//     console.log("ko");
+//     y()
+// }
+// function b(){
+//     console.log("lp");
+// }
+
+// a(b)

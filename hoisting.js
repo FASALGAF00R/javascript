@@ -29,10 +29,10 @@
 // hi()
 // console.log(a);
 
-// console.log(a);
-// var a=10
-// var a=9;
-// console.log(a);
+console.log(a);
+var a=10
+var a=9;
+console.log(a);
 
 
 

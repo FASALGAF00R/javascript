@@ -21,14 +21,15 @@
 //  console.log(obj.sum(20,20));
 
 
-let a={
-    name:"fasalu",
-    age:7,
-    details:function(){
-        console.log(this.name,this.age);
-    }
-}
-a.details()
+// let a={
+//     name:"fasalu",
+//     age:7,
+//     details:function(){
+//         console.log(this.name,this.age);
+//     }
+// }
+// a.details()
+
 // const obj = {
 //     num: 100,
 //     sum(a, b) {
@@ -36,7 +37,6 @@ a.details()
 //     },
 //   };
 //   console.log(obj['sum'](1, 1)); 
-
 
 // const a={
 //     name:"fasalu",
