@@ -59,12 +59,43 @@
 // console.log(palindrome(c));
 
 
+// const num=[1,2,3,4,5]
+// var fact=1
+//     for (i = 1; i <= num.length; i++) {
+//         fact =fact*i;
+//     }
+//     console.log(fact)
+
+
+// const num=[1,2,3,4,5]
+// function factorial (num){
+//    if(num==1||num ==0){
+//        return 1
+//    }
+
+//    return  num * factorial(num-1)
+
+// }
+// const factorialarray=num.map(n=>factorial(n))
+// console.log( factorialarray);
 
 
 
 
 
+// let arr = [1, 2, 3, 2, 3, 4, 5];
 
+// const count = {};
+
+// for (let i = 0; i < arr.length; i++) {
+//     let ele = arr[i];
+//     if (count[ele]) {
+//         count[ele] += 1;
+//     } else {
+//         count[ele] = 1;
+//     }
+// }
+// console.log(count);
 
 
 

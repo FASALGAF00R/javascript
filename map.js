@@ -271,6 +271,7 @@
 //     console.log(c[i]);
 //     i++
 // }
+
 // let num=1;
 // do{
 //     if(num%2!=0){
@@ -293,7 +294,6 @@
 // }
 
 // let number = 4;
-
 // switch (number % 4) {
 //   case 0:
 //     console.log(`${number} is divisible by 3`);

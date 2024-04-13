@@ -59,3 +59,63 @@
 // console.log(c[1][0]); // Output: 1
 
 
+// gr questions
+
+// const c=10
+// function a(){
+// return c
+// }
+// let f=a()
+// console.log(f);
+
+
+// pass by value
+
+// function a(x){
+// x=10
+// }
+// var y=5;
+// a(y)
+// console.log(y);
+
+// pass by reference
+
+// const obj={
+//     name:'fasal',
+//     age:22
+// }
+
+// function a(b){
+// b.name="hkfb"
+// b.age=23
+// }
+
+// a(obj)
+// console.log(obj.name);
+// console.log(obj.age);
+
+// closure,nested functions
+
+// function a(name){
+//     let a=10
+//     function b(){
+//         console.log("hi bro"+name);
+//         console.log(a);
+//     }
+//     b()
+// }
+
+// a('fasalu')
+
+
+// returning a function from another function
+
+function a(name){
+    function b(){
+console.log("helo"+name);
+    }
+    return b
+}
+
+let n=a("kj")
+n()
