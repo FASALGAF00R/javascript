@@ -103,21 +103,34 @@
 // console.log(array);
 
 
-const obj={
-    a:10,
-    b:2,
-    c:6,
-    d:9
-}
+// const obj = {
+//     a: '1007',
+//     b: '2678',
+//     c: '6455',
+//     d: '9899'
+// }
 
-for(let i in obj){
-    let larg=Object.keys(obj)
-    
 
-   
+// let larg=Infinity
+// let largkey
+// for(let i in obj){
+//     if(typeof obj[i]==='string' && obj[i] <larg){
+//         larg=obj[i]  
+//         largkey=i
+//     }
+// }
+// delete obj[largkey]
+// console.log(obj);
 
-}
-    console.log(larg);
+
+
+// const newobj={}
+
+// const a=Object.keys(obj).reverse()
+// a.forEach(key=>{
+//     newobj[key]=obj[key]
+// })
+// console.log(newobj);
 
 
 
@@ -127,9 +140,36 @@ for(let i in obj){
 
 
 
-// console.log(1 / 0); // Output: Infinity
+// console.log(1/ 0); // Output: Infinity
 // console.log(-1 / 0); // Output: -Infinity
 // console.log(Infinity > 1000); // Output: true
 // console.log(Infinity + 1); // Output: Infinity
 // console.log(Infinity / Infinity); // Output: NaN
+
+
+// const string = '-0.02+3.4+5.6666';
+// // const numbers=string.match(/\d+/g)
+// // const op=/[+-]/g
+// const l=string.match(op)
+// console.log(l); 
+
+const string = '0.02+3.4+5.6666';
+const arr=[...string]
+var c='';
+var sum=0
+for(let i=0;i<arr.length;i++){
+    if(!isNaN(parseInt(arr[i]))){
+        c+=arr[i]
+        sum+=parseFloat(c)
+    }
+} 
+
+console.log(sum);
+
+
+
+
+
+
+
 
