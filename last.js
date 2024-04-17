@@ -153,23 +153,131 @@
 // const l=string.match(op)
 // console.log(l); 
 
-const string = '0.02+3.4+5.6666';
-const arr=[...string]
-var c='';
-var sum=0
-for(let i=0;i<arr.length;i++){
-    if(!isNaN(parseInt(arr[i]))){
-        c+=arr[i]
-        sum+=parseFloat(c)
-    }
-} 
+// const string = '0.02+3.4+5.6666';
+// const arr=[...string]
+// var c='';
+// var sum=0
+// for(let i=0;i<arr.length;i++){
+//     if(!isNaN(parseInt(arr[i]))){
+//         c+=arr[i]
+//         sum+=parseFloat(c)
+//     }
+// } 
 
-console.log(sum);
-
-
+// console.log(sum);
 
 
+// const arr=undefined
+// console.log(typeof arr);
+
+// const c=new Date()
+// const a= c.getHours()
+// const b= c.getMinutes()
+// const d= c.getSeconds()
+
+// const time=a+':'+b
+// console.log(time);
 
 
 
+// try{
+//     var a=10
+//     a=b
+//     console.log(a);
+// }catch(error){
+//     console.log(error.message,"error");
+// }
+
+// example of an asynchronus function
+
+// async function c(time){
+//     console.log(time);
+// return new Promise((resolve,reject)=>{
+//     if(time <0){
+//         reject(new Error('invalid time'))
+//     }else{
+
+//         setTimeout(resolve,time)
+//     }
+// })
+
+// }
+
+// async function s(){
+//     console.log("beginign");
+//     await c(3000)
+//     await c(-3000)
+
+//     console.log("After waiting...");
+//     console.log("Done!");
+// }
+
+// s()
+
+
+// var num=1
+// while(num <= 100){
+//     console.log(num);
+//     num ++
+// }
+
+// var num=1
+// do{
+//     console.log(num);
+//     num++
+// }while(num <=100)
+
+
+// for (let i = 1; i <= 10; i++) {
+//     setTimeout(() => {
+//         console.log(i);
+//     }, i * 1000)
+// }
+
+// for (var i = 1; i <= 10; i++) {
+//     (function (num) {
+//         setTimeout(() => {
+//             console.log(num);
+//         }, num * 1000);
+//     })(i);
+// }
+
+
+
+// function printNumbers() {
+//     for (let i = 1; i <= 100; i++) {
+//         console.log(i);
+//     }
+// }
+// printNumbers();
+
+
+// const numbers = [0,10,20,30,40];
+// const c=numbers.map(vl=>(9/5)*vl+32)
+// console.log(c);
+
+
+// const a=[{firstName: 'John', lastName: 'Doe'}, {firstName: 'Jane', lastName: 'Smith'}]
+// const v=a.map(vl=>({
+//     fullname:`${vl.firstName}  ${vl.lastName}`
+// }))
+// console.log(v);
+
+// const a=['John Doe', 'Jane Smith', 'Alice Johnson']
+// const v=a.map(vl=>{
+//     const lete=vl.split(' ')
+//     console.log(lete);
+//     const b=lete.map(part=>part[0]).join('')
+//     return b
+// })
+
+// console.log(v);
+
+const words = ['apple', 'banana', 'cherry'];
+
+const capitalizedWords = words.map(word => {
+    return word.charAt(0).toUpperCase() + word.slice(1);
+});
+
+console.log(capitalizedWords);
 
