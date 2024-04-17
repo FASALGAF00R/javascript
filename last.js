@@ -273,11 +273,56 @@
 
 // console.log(v);
 
-const words = ['apple', 'banana', 'cherry'];
+// const words = ['apple', 'banana', 'cherry'];
 
-const capitalizedWords = words.map(word => {
-    return word.charAt(0).toUpperCase() + word.slice(1);
-});
+// const capitalizedWords = words.map(word => {
+//     return word.charAt(0).toUpperCase() + word.slice(1);
+// });
 
-console.log(capitalizedWords);
+// console.log(capitalizedWords);
 
+
+// const c=['hello', 'world', 'javascript']
+// const b=c.map(vl=>{
+//     return vl.split('').reverse().join('')
+// })
+// console.log(b);
+
+
+// const a=arr.some(vl=>vowel.includes(vl))
+// console.log(a);
+
+// const s='level'.split('')
+// for(let i=0;i<s.length/2;i++){
+//     let temp=s[i]
+//     s[i]=s[s.length-1-i];
+//     s[s.length-1-i]=temp
+
+// }
+
+// console.log(s);
+
+
+
+// const arr ="ai".split('');
+// const vowell = ['a', 'e', 'i', 'o', 'u'];
+// let count=0
+// let temp=0
+// function isVowel(char) {
+//     return vowell.includes(char);
+// }
+// for (let i = 0; i < arr.length; i++) {
+//     const char = arr[i];
+//     if (isVowel(char)) {
+//         count++;
+//         if(count==2&&temp>=0){
+//           let newtemp=arr[temp]
+//           arr[temp]=arr[i]
+//           arr[i]=newtemp
+//             count=1
+//         }
+//          temp=i
+//     }
+// }
+
+// console.log(arr.join(''));
