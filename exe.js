@@ -36,7 +36,17 @@
 // console.log(gen.next().value);
 // console.log(gen.next().value);
 
+// function * func(){
+//     for (let i = 1; i <= 10; i++) {
+//         yield i;
+//       }
+// }
 
+// let g=func()
+// for(let c of g){
+//     console.log(c);
+// }
+// console.log(g.next().value);
 
 
 // let a = new Promise(function(resolve,reject){
@@ -68,4 +78,16 @@
 // person.call(person,"fasal")
 
 
- 
+// 
+
+const c=[1,2,3,4,5]
+const b=c.reduce((a,b)=>{
+    if(b%2===0){
+        return a+b
+    }else{
+
+        return a
+    }
+},0)
+
+console.log(b);

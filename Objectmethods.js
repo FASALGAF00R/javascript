@@ -16,23 +16,28 @@
 
 // const target = { a: 1, b: 2 };
 // const source = { b: 3, c: 4 };
-// const merged = Object.assign(target, source);
+// const merged = Object.assign( target,source);
 // console.log(merged); // Output: { a: 1, b: 3, c: 4 }
 
 
-
+// changes is not possible new adding not possible
 
 // const obj = { a: 1, b: 2 };
 // Object.freeze(obj);
-// obj.b = 3; // Throws an error in strict mode
+// delete obj.a
+// obj.b = 3; 
+// obj.c=8
 // console.log(obj); // Output: { a: 1, b: 2 }
 
 
+// changes is possible new adding not possible
 
 // const obj = { a: 1, b: 2 };
 // Object.seal(obj);
-// delete obj.a; // Returns false in strict mode
-// console.log(obj); // Output: { a: 1, b: 2 }
+// delete obj.a
+//  obj.a=4
+//  obj.c=8
+// console.log(obj);
 
 // const obj = { a: 1, b: 2 };
 // const properties = Object.getOwnPropertyNames(obj);
@@ -110,12 +115,12 @@
 
 // returning a function from another function
 
-function a(name){
-    function b(){
-console.log("helo"+name);
-    }
-    return b
-}
+// function a(name){
+//     function b(){
+// console.log("helo"+name);
+//     }
+//     return b
+// }
 
-let n=a("kj")
-n()
+// let n=a("kj")
+// n()

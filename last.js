@@ -106,9 +106,29 @@
 // const obj = {
 //     a: '1007',
 //     b: '2678',
-//     c: '6455',
+//     c: '2000',
 //     d: '9899'
 // }
+// let sum=0
+// for(let i in obj){
+//     let b=Number(obj[i])
+// sum=sum+b
+// }
+// console.log(sum);
+
+
+// let larg=-Infinity
+// let seclarg=-Infinity
+// for(let i in obj){
+//     if(obj[i]>larg){
+//         seclarg=larg
+//         larg=obj[i]
+//     }else if(obj[i]>seclarg){
+//         seclarg=obj[i]
+//     }
+// }
+// console.log(larg);
+// console.log(seclarg);
 
 
 // let larg=Infinity
@@ -148,8 +168,9 @@
 
 
 // const string = '-0.02+3.4+5.6666';
-// // const numbers=string.match(/\d+/g)
-// // const op=/[+-]/g
+// const numbers=string.match(/\d+/g)
+// console.log(numbers);
+// const op=/[+-]/g
 // const l=string.match(op)
 // console.log(l); 
 
@@ -326,3 +347,199 @@
 // }
 
 // console.log(arr.join(''));
+
+
+
+
+// let str = "hello".split()
+// str[0] = "H"; 
+// console.log(str); 
+
+
+
+
+// function a(name){
+//     name='t'
+//     console.log(name)
+// }
+// var f='nh'
+// a(f)
+// console.log(f)
+
+
+// const obj={
+//     name:'fasda'
+// }
+// const c=JSON.parse(JSON.stringify(obj))
+// c.name='ddddd'
+// console.log(c)
+// console.log(obj)
+
+
+// console.log(this===window)
+
+// const s={
+//     name:'fasal',
+//     check:function(){
+//         console.log('my name is '+this.name)
+//     }
+// }
+
+// s.check()
+
+// function pers(name){
+//     this.name=name
+// }
+// const i=new pers('fasal')
+// console.log(i.name)
+
+// function hi(){
+//     console.log('hi iam a'+this.name)
+// }
+
+// const n={name:'fasal'}
+
+// hi.call(n)
+
+
+// const o={
+//     name:'fasal',
+//     che:function(){
+//         const inn=()=>{
+//         console.log('my name is '+this.name)
+//         }
+//         inn()
+//     }
+// }
+
+// o.che()
+
+
+// const promi=new Promise((resolve,reject)=>{
+//     let a=10
+//     if(a==1){
+//         resolve("succes")
+//     }else{
+//         reject("failure")
+//     }
+// })
+
+// promi.then((mess)=>{
+//     console.log(mess +"yes")
+// }).catch((mess)=>{
+//         console.log(mess +"no")
+// })
+
+
+
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+
+// const obj = { foo: 'bar' };
+// const weakRef = new WeakRef(obj);
+// console.log(weakRef)
+// const c=weakRef.deref()
+// console.log(c)
+
+
+// function l1(callback){
+//     console.log('hfb')
+//     setTimeout(()=>{
+//         callback()
+//     },3000)
+//     }
+
+//     function l2(callback){
+//     console.log('hfbtyryt')
+//     setTimeout(()=>{
+//         callback()
+//     },3000)
+//     }
+
+//     function l3(callback){
+//     console.log('hfbbbbbbbbbb')
+//     setTimeout(()=>{
+//         callback()
+//     },3000)
+//     }
+
+
+//     function callback(){
+//         console.log(5)
+//         l2(6)
+//     }
+//     l1(callback)
+
+
+// const main=function(callback){
+//     setTimeout(() => {    
+//         callback([1,2,3,4])
+//     }, 2000);
+// }
+
+// const add=(arr)=>{
+//     let sum=0
+//     for(let i of arr){
+//         sum+=i
+//     }
+//     console.log(sum);
+// }
+
+// main(add)
+
+
+// function divide(x,y){
+//     return x/y
+// }
+
+// function multiply(x,y){
+//     return x*y
+// }
+
+// function compute(callBack, x, y){
+//     return callBack(x,y)
+// }
+
+// console.log(compute(divide, 10, 5))   
+// console.log(compute(multiply, 10, 5))
+
+
+// function l1(num) {
+//     console.log('hfb')
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             resolve(num)
+//         }, 3000)
+//     })
+// }
+// function l2(num) {
+//     console.log('hfb')
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             resolve(num)
+//         }, 3000)
+//     })
+// }
+
+
+
+// l1(5).then((response) => {
+// return l2(response +5)    
+// }).then((response)=>{
+//     console.log(response);
+// })
+
+
+
+// function a(a){
+// return function (b){
+//     return function (c){
+//       return  a*b*c
+//     }
+// }
+// }
+
+// console.log(a(1)(2)(3));
+
+
+

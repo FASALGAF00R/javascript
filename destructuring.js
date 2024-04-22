@@ -287,7 +287,7 @@
 
 
 // let a={ab:{as:14,al:20,ad:30},ar:[4,6,8,9],af:90}
-
+// console.log(a.af);
 // console.log(a.ab.as-a.ar[0]);
 
 // const a = [{d:54,ld:45},{aa:4,lod:45},{df:8,add:9},{fg:50,a:90}]
@@ -348,10 +348,9 @@
 //     }
 //     result.push(c);
 // }
-// const result = transpos(arr);
-
 
 // console.log(result);
+
 
 
 // const obj={a:1,b:2,c:3}

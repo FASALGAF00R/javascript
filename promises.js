@@ -19,12 +19,27 @@ a.then((message)=>{
     console.log("not"+message);
 })
 
+// promise all
+
+let v = new Promise ((resolve,reject)=>{
+resolve(["jj","ppp"])
+// reject("failed")
+
+})
+
+let p = new Promise ((resolve,reject)=>{
+    resolve(["uu","00"])
+    // reject("failed")
+    })
 
 
+const pp=Promise.all([v,p])
 
-
-
-
+pp.then((res)=>{
+    console.log(res);
+}).catch((err)=>{
+    console.log(err);
+})
 
 
 
