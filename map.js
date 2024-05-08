@@ -381,3 +381,6 @@
 // console.log(e);
 
 
+// const s = "Of all the gin joints in all the towns in all the world,   "
+// const a=s.split(' ')
+// console.log(a);
