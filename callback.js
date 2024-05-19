@@ -146,12 +146,3 @@
 
 
 
-// function a(y){
-//     console.log("ko");
-//     y()
-// }
-// function b(){
-//     console.log("lp");
-// }
-
-// a(b)
