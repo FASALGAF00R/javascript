@@ -4,7 +4,7 @@
 //     details: function(){
 //         console.log(this.name,this.age);
 
-const { log } = require("util")
+
 
 //     }
 // }
