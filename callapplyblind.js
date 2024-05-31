@@ -20,7 +20,7 @@
 //   let c=greet.bind(person); 
 // c("Bob")
 
-
+console.log("hi");
 
 // function a(n){
 //     console.log("hi");
