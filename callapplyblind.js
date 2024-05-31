@@ -29,6 +29,14 @@
 
 
 
+// function a(n){
+//     console.log("hi");
+//     n()
+// }
+// function b(){
+//     console.log("hhhhh");
+// }
+// a(b)
 
 
 
@@ -47,10 +55,73 @@
 
 
 
+// //countdown recursion
+// function countdown(n) {
+//     if (n >= 0) {
+//         setTimeout(() => {
+//             if (n <= 10) {
+//                 console.log(n);
+//                 countdown(n - 1)
+//             }
+//         }, 1000);
+//     }
+// }
+// countdown(10)
+
+
+
+// function isPalindrome(arr, start, end) {
+//     if (start >= end) {
+//         return true;
+//     }
+//     if (arr[start] === arr[end]) {
+//         return isPalindrome(arr, start + 1, end - 1)
+//     } else {
+//         return false
+//     }
+// }
+// function palindrom(arr) {
+//     return isPalindrome(arr, 0, arr.length - 1)
+// }
+// console.log(palindrom([1, 2, 1]));
 
 
 
 
+
+
+
+// function isplaindrome(arr,s,e){
+//     if(s>=e){
+//         return true
+//     }
+//     if(arr[s]===arr[e]){
+//         return isplaindrome(arr,s + 1,e -1)
+//     }else{
+//         return false
+//     }
+// }
+// function pal(arr){
+//     return isplaindrome(arr,0,arr.length-1)
+// }
+
+// console.log(pal([1,2,1]));
+
+
+
+// function countdown(n){
+//     if(n>=0){
+//         setTimeout(() => {
+//             if(n<=10){
+//                 console.log(n);
+//                 countdown(n-1)
+//             }
+//         }, 1000);
+//     }
+
+// }
+
+// countdown(10)
 
 
 

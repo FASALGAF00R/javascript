@@ -1,11 +1,11 @@
-let a = new Promise ((resolve,reject)=>{
-    let a=1+7
-    if (a==2){
-        resolve('success');
-    }else{
-        reject('failure');
-    }
-});
+// let a = new Promise ((resolve,reject)=>{
+//     let a=1+7
+//     if (a==2){
+//         resolve('success');
+//     }else{
+//         reject('failure');
+//     }
+// });
 
 // a.then((message)=>{
 //     console.log('completed'+message)
@@ -13,27 +13,27 @@ let a = new Promise ((resolve,reject)=>{
 //     console.log('not completed'+message)
 // })
 
-a.then((message)=>{
-    console.log('yes'+message);
-}).catch((message)=>{
-    console.log("not"+message);
-})
+// a.then((message)=>{
+//     console.log('yes'+message);
+// }).catch((message)=>{
+//     console.log("not"+message);
+// })
 
 // promise all
 
 let v = new Promise ((resolve,reject)=>{
-resolve(["jj","ppp"])
+reject(["jj","ppp"])
 // reject("failed")
 
 })
 
 let p = new Promise ((resolve,reject)=>{
-    resolve(["uu","00"])
+    reject(["uu","00"])
     // reject("failed")
     })
 
 
-const pp=Promise.all([v,p])
+const pp=Promise.race([v,p])
 
 pp.then((res)=>{
     console.log(res);
