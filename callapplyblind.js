@@ -1,10 +1,3 @@
-// function greet(name) {
-//     console.log(`Hello, ${name}! My name is ${this.name}.`);
-//   }
-  
-//   const person = { name: "Alice" };
-  
-//   greet.call(person, "Bob"); 
 
 
 
