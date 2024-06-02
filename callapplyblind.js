@@ -145,3 +145,19 @@ console.log("hi");
 
 
 
+const s='abcd'
+const arr1=s.split('')
+const k=2
+const arr2=[]
+const arr3=[]
+for(let i=0;i<arr1.length;i++){
+    if(i<k){
+        arr2.push(arr1[i])
+        arr2.reverse()
+    }else{
+        arr3.push(arr1[i])
+    }
+    
+}
+const ans=arr2.concat(arr3).join()
+console.log( ans)
