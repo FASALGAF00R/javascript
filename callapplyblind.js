@@ -4,23 +4,23 @@
 // function greet(name) {
 //     console.log(`Hello, ${name}! My name is ${this.name}.`);
 //   }
-  
+
 //   const person = { name: "Alice" };
-  
+
 //   greet.apply(person, ["Bob"]); 
-  
+
 
 
 // function greet(name) {
 //     console.log(`Hello, ${name}! My name is ${this.name}.`);
 //   }
-  
+
 //   const person = { name: "Alice" };
-  
+
 //   let c=greet.bind(person); 
 // c("Bob")
 
-console.log("hi");
+
 
 // function a(n){
 //     console.log("hi");
@@ -145,19 +145,32 @@ console.log("hi");
 
 
 
-const s='abcd'
-const arr1=s.split('')
-const k=2
-const arr2=[]
-const arr3=[]
-for(let i=0;i<arr1.length;i++){
-    if(i<k){
-        arr2.push(arr1[i])
-        arr2.reverse()
+// const s='abcd'
+// const arr1=s.split('')
+// const k=2
+// const arr2=[]
+// const arr3=[]
+// for(let i=0;i<arr1.length;i++){
+//     if(i<k){
+//         arr2.push(arr1[i])
+//         arr2.reverse()
+//     }else{
+//         arr3.push(arr1[i])
+//     }
+
+// }
+// const ans=arr2.concat(arr3).join()
+// console.log( ans)
+
+
+const candyType = [1, 1, 2, 2, 3, 3]
+const uninque = new Set(candyType)
+let arr=[...uninque]
+
+for (let i = 0; i < arr.length; i++) {
+    if (arr.length<arr.length/2) {
+        return arr.length
     }else{
-        arr3.push(arr1[i])
+        return arr.length/2
     }
-    
 }
-const ans=arr2.concat(arr3).join()
-console.log( ans)
