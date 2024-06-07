@@ -1,22 +1,16 @@
 
-
-
 // function greet(name) {
 //     console.log(`Hello, ${name}! My name is ${this.name}.`);
 //   }
 
 //   const person = { name: "Alice" };
-
 //   greet.apply(person, ["Bob"]); 
 
-
-
 // function greet(name) {
 //     console.log(`Hello, ${name}! My name is ${this.name}.`);
 //   }
 
 //   const person = { name: "Alice" };
-
 //   let c=greet.bind(person); 
 // c("Bob")
 
@@ -80,10 +74,6 @@
 
 
 
-
-
-
-
 // function isplaindrome(arr,s,e){
 //     if(s>=e){
 //         return true
@@ -115,12 +105,6 @@
 // }
 
 // countdown(10)
-
-
-
-
-
-
 
 
 // sum=0;
@@ -163,14 +147,34 @@
 // console.log( ans)
 
 
-const candyType = [1, 1, 2, 2, 3, 3]
-const uninque = new Set(candyType)
-let arr=[...uninque]
+// const candyType = [1, 1, 2, 2, 3, 3]
+// const uninque = new Set(candyType)
+// let arr=[...uninque]
 
-for (let i = 0; i < arr.length; i++) {
-    if (arr.length<arr.length/2) {
-        return arr.length
-    }else{
-        return arr.length/2
-    }
+// for (let i = 0; i < arr.length; i++) {
+//     if (arr.length<arr.length/2) {
+//         return arr.length
+//     }else{
+//         return arr.length/2
+//     }
+// }
+
+// const s="aba"
+
+// const ans=function(s){
+//     const arr=[...s]
+//     const arr2=arr.reverse()
+//     if(arr===arr2){
+//         return true
+//     }else{
+//         return false
+//     }
+// }
+
+// console.log(ans(s));
+
+
+const arr=[3,4,5,6,7,8,8]
+for(let i=0;i<arr.length;i++){
+
 }
