@@ -127,47 +127,30 @@
 
 
 
-const s = "loveleetcode";
-const c = "e";
+// const s = "loveleetcode";
+// const c = "e";
 
-const arr = [...s]
-const arr2=[]
-let j=0
-let f
-for (let i = 0; i < arr.length; i++) {
-    if (arr[i] === c) {
-       f =i-j
-        arr2.push(j)
-    }
-    j++
-}
+// // Initialize the answer array with a large number (Infinity)
+// const answer = new Array(s.length).fill(Infinity);
 
-console.log(arr2);
+// // Left-to-right pass
+// let prev = -Infinity;
+// for (let i = 0; i < s.length; i++) {
+//     if (s[i] === c) {
+//         prev = i;
+//     }
+//     answer[i] = Math.abs(i - prev);
+// }
 
-const s = "loveleetcode";
-const c = "e";
+// // Right-to-left pass
+// prev = Infinity;
+// for (let i = s.length - 1; i >= 0; i--) {
+//     if (s[i] === c) {
+//         prev = i;
+//     }
+//     answer[i] = Math.min(answer[i], Math.abs(i - prev));
+// }
 
-// Initialize the answer array with a large number (Infinity)
-const answer = new Array(s.length).fill(Infinity);
-
-// Left-to-right pass
-let prev = -Infinity;
-for (let i = 0; i < s.length; i++) {
-    if (s[i] === c) {
-        prev = i;
-    }
-    answer[i] = Math.abs(i - prev);
-}
-
-// Right-to-left pass
-prev = Infinity;
-for (let i = s.length - 1; i >= 0; i--) {
-    if (s[i] === c) {
-        prev = i;
-    }
-    answer[i] = Math.min(answer[i], Math.abs(i - prev));
-}
-
-console.log(answer); // Output: [3, 2, 1, 0, 1, 0, 0, 1, 2, 2, 1, 0]
+// console.log(answer); // Output: [3, 2, 1, 0, 1, 0, 0, 1, 2, 2, 1, 0]
 
 

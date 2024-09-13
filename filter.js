@@ -31,6 +31,6 @@
 // console.log(b);
 
 
-// let a=[1,2,3,4,5];
-// const v=a.filter((el)=>el%2==1)
-// console.log(v);
+let a=[1,2,3,4,5];
+const v=a.filter((el)=>el%2===1)
+console.log(v);

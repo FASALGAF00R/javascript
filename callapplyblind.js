@@ -27,12 +27,6 @@
 
 
 
-
-
-
-
-
-
 // function greet(name) {
 //     console.log(`hello,${name}!`);
 // }
@@ -40,9 +34,7 @@
 
 
 
-
-
-// //countdown recursion
+//countdown recursion
 // function countdown(n) {
 //     if (n >= 0) {
 //         setTimeout(() => {
@@ -84,7 +76,7 @@
 //         return false
 //     }
 // }
-// function pal(arr){
+// function pal(arr){  
 //     return isplaindrome(arr,0,arr.length-1)
 // }
 
@@ -126,7 +118,6 @@
 // }
 // while(i<a.length);
 // console.log(sum);
-
 
 
 // const s='abcd'
@@ -174,7 +165,9 @@
 // console.log(ans(s));
 
 
-const arr=[3,4,5,6,7,8,8]
-for(let i=0;i<arr.length;i++){
-
-}
+// const arr=[3,4,5,6,7,8,8]
+// for(let i=0;i<arr.length;i++){
+//     if(arr[i]%3==0){
+//         console.log(arr[i]);
+//     }
+// }

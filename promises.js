@@ -21,25 +21,25 @@
 
 // promise all
 
-let v = new Promise ((resolve,reject)=>{
-reject(["jj","ppp"])
-// reject("failed")
+// let v = new Promise ((resolve,reject)=>{
+// reject(["jj","ppp"])
+// // reject("failed")
+// })
 
-})
+// let p = new Promise ((resolve,reject)=>{
+//     reject(["uu","00"])
+//     // reject("failed")
+//     })
+    
 
-let p = new Promise ((resolve,reject)=>{
-    reject(["uu","00"])
-    // reject("failed")
-    })
 
+// const pp=Promise.race([v,p])
 
-const pp=Promise.race([v,p])
-
-pp.then((res)=>{
-    console.log(res);
-}).catch((err)=>{
-    console.log(err);
-})
+// pp.then((res)=>{
+//     console.log(res);
+// }).catch((err)=>{
+//     console.log(err);
+// })
 
 
 

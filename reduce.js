@@ -1,12 +1,12 @@
-// const a=[1,2,3,4,5]
-// const b=a.reduce((x,y)=>{
-//     if(y%2==0){
-// return x+y
-//     }else{
-//    return x
-//     }
-// },0)
-// console.log(b);
+const a=[1,2,3,4,5]
+const b=a.reduce((x,y)=>{
+    if(y%2==0){
+return x+y
+    }else{
+   return x
+    }
+},0)
+console.log(b);
 
 
 
