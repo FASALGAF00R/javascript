@@ -1,50 +1,19 @@
-// const arr=[1,2,3,4,5,5]
-// let flag
-// for(let i=0;i<arr.length;i++){
-//     flag=0
-//     for(let j=1;j<=arr[i];j++){
-//         if(arr[i]%j===0){
-//             flag ++
-//         }
-//     }
-//         if(flag==2){
-//             console.log(arr[i]);
-//         }
-    
-// }
-
-// const arr=[3,4,5,5,6,7,7]
-// for(let i=0;i<arr.length;i++){
-        
-// console.log(arr[i]);
-// }
-
-let arr=[6,2,9,3,2]
-let count =0
-for(let i=0;i<arr.length;i++){
-    let flag=0
-    for(let j=1;j<=arr[i];j++){
-        if (arr[i]%j==0) {
-            flag ++
+const a = [1, 1, 2, 2, 4]
+let count
+let f = []
+for (let i = 0; i < a.length; i++) {
+    count = 1
+    if (a[i] != -1) {
+        for (let j = i + 1; j < a.length; j++) {
+            if (a[i] == a[j]) {
+                count++
+                a[j] = -1
+            }
         }
-    }
-    if (flag===2) {
-        count ++
-    }
+        f.push({vl:a[i],fre:count})
+    
 }
-console.log(count);       
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
+console.log(f);
 
 
