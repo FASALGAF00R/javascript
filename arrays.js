@@ -126,29 +126,39 @@
 // }
 
 
-const v = [1, 1, 25, 3, 3, 4, 5]
-var count;
-var f = []
-for (let i = 0; i < v.length; i++) {
-    count = 1
-    if (v[i] != -1) {
-        for (let j = i + 1; j < v.length; j++) {
-            if (v[i] == v[j]) {
-                count++
-                v[j] = -1
-            }
-        }
-            f[i] = count
-        
-    }
-}
+// const v = [1, 1, 25, 3, 3, 4, 5]
+// var count;
+// var f = []
+// for (let i = 0; i < v.length; i++) {
+//     count = 1
+//     if (v[i] != -1) {
+//         for (let j = i + 1; j < v.length; j++) {
+//             if (v[i] == v[j]) {
+//                 count++
+//                 v[j] = -1
+//             }
+//         }
+//             f[i] = count
 
-for (let i = 0; i < v.length; i++) {
-    if(v[i]!=-1){
-        console.log(v[i] ,":", f[i]);
-    }
+//     }
+// }
+
+// for (let i = 0; i < v.length; i++) {
+//     if(v[i]!=-1){
+//         console.log(v[i] ,":", f[i]);
+//     }
+
+// }
+
+const a = [1, 2, 3, 4, 5]
+function factorial(n) {
     
+    if (n == 1) {
+        return 1
+    }
+    return n * (factorial(n - 1))
 }
-
+const c = a.map(factorial)
+console.log(c);
 
 
