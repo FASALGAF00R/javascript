@@ -147,12 +147,12 @@
 //     if(v[i]!=-1){
 //         console.log(v[i] ,":", f[i]);
 //     }
-
 // }
+
+
 
 const a = [1, 2, 3, 4, 5]
 function factorial(n) {
-    
     if (n == 1) {
         return 1
     }
