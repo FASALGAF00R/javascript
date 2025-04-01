@@ -12,6 +12,18 @@
 // console.log(avg);  
 
 
+const arr=[99,2,10,4,-9]
+var search=2
+for(let i=0;i<arr.length;i++){
+     if( search==arr[i]){
+        console.log("value found at ",i + "th position");
+        break;
+    }
+}
+
+
+
+
 // const arr=[3,2,2,3,4]
 // for(let i=0;i<arr.length;i++){
 //     for(let j=i+1;j<arr.length;j++){
@@ -151,14 +163,14 @@
 
 
 
-const a = [1, 2, 3, 4, 5]
-function factorial(n) {
-    if (n == 1) {
-        return 1
-    }
-    return n * (factorial(n - 1))
-}
-const c = a.map(factorial)
-console.log(c);
+// const a = [1, 2, 3, 4, 5]
+// function factorial(n) {
+//     if (n == 1) {
+//         return 1
+//     }
+//     return n * (factorial(n - 1))
+// }
+// const c = a.map(factorial)
+// console.log(c);
 
 

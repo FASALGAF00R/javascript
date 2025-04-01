@@ -69,7 +69,6 @@ const person = {
   }
   
 
-
 //   const x = person;
   
 //   console.log(x)
