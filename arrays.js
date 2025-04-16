@@ -12,17 +12,14 @@
 // console.log(avg);  
 
 
-const arr=[99,2,10,4,-9]
-var search=2
-for(let i=0;i<arr.length;i++){
-     if( search==arr[i]){
-        console.log("value found at ",i + "th position");
-        break;
-    }
-}
-
-
-
+// const arr=[99,2,10,4,-9]
+// var search=2
+// for(let i=0;i<arr.length;i++){
+//      if( search==arr[i]){
+//         console.log("value found at ",i + "th position");
+//         break;
+//     }
+// }
 
 // const arr=[3,2,2,3,4]
 // for(let i=0;i<arr.length;i++){
@@ -41,7 +38,7 @@ for(let i=0;i<arr.length;i++){
 //         if(arr[i]===arr[j] && i!=j){
 //             flag++       
 //         }
-//     }
+//     } 
 //     if(flag==0){
 //         console.log(arr[i]);   
 //     }
@@ -49,7 +46,7 @@ for(let i=0;i<arr.length;i++){
 
 // const arr=[4,5,6,8,3]
 // let flag
-// for(let i=0;i<arr.length;i++){
+// for(let i=0;i<arr.length;i++){ 
 //     flag=0
 //     for(let j=1;j<=arr[i];j++){
 //         if(arr[i]%j==0){
@@ -66,6 +63,7 @@ for(let i=0;i<arr.length;i++){
 //     console.log(arr[i]);
 // }
 
+// const arr=[4,3,4,5,6]
 // for(let i=0;i<arr.length/2;i++){
 //     const temp=arr[i]
 //     arr[i]=arr[arr.length-i-1]
@@ -91,12 +89,12 @@ for(let i=0;i<arr.length;i++){
 // var sl
 // for (var i = 0; i < arr.length; i++) {
 //     if (arr[i] > L) {
-//         sl=L
+//         sl=L 
 //         L = arr[i]
 //     }else if(sl<L && arr[i] >sl ){
 //         sl=arr[i]
 //     }
-// }
+// } 
 
 // console.log(sl);
 
@@ -137,7 +135,7 @@ for(let i=0;i<arr.length;i++){
 //     }
 // }
 
-
+ 
 // const v = [1, 1, 25, 3, 3, 4, 5]
 // var count;
 // var f = []
@@ -173,4 +171,18 @@ for(let i=0;i<arr.length;i++){
 // const c = a.map(factorial)
 // console.log(c);
 
+
+const a=[1,2,3,4,5];b=[6,7,8,9,10]
+const c=[]
+
+for(let i=0;i<a.length;i++){
+    c[i]=a[i]
+}
+
+for(let i=0;i<b.length;i++){
+    c[i+a.length]=b[i]
+}
+
+
+console.log(c);
 
