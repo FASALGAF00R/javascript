@@ -135,7 +135,7 @@
 //     }
 // }
 
- 
+
 // const v = [1, 1, 25, 3, 3, 4, 5]
 // var count;
 // var f = []
@@ -172,17 +172,50 @@
 // console.log(c);
 
 
-const a=[1,2,3,4,5];b=[6,7,8,9,10]
-const c=[]
+// const a=[1,2,3,4,5];b=[6,7,8,9,10]
+// const c=[]
 
-for(let i=0;i<a.length;i++){
-    c[i]=a[i]
+// for(let i=0;i<a.length;i++){
+//     c[i]=a[i]
+// }
+
+// for(let i=0;i<b.length;i++){
+//     c[i+a.length]=b[i]
+// }
+// console.log(c);
+
+
+// const str='malayalam'
+// const a=str.split('')
+// function checkpali(string){
+//     for (let i = 0; i <a.length/ 2; i++) {
+//         if (a[i] !== a[a.length - 1 - i]) {
+//             return 'It is not a palindrome';
+//         }
+//     return 'It is a palindrome';
+// }
+// }
+// const string =a;
+// const vl=checkpali(string)
+
+// console.log(vl);
+
+
+
+const arr = [1, 3, 2, 5, 9]
+
+for (let i = 0; i < arr.length; i++) {
+    if (arr[i] % 3 == 0) {
+        for (let j = i; j < arr.length; j++) {
+            arr[j] = arr[j + 1]
+        }
+        arr.length--
+    }
 }
 
-for(let i=0;i<b.length;i++){
-    c[i+a.length]=b[i]
+for (let i = 0; i < arr.length / 2; i++) {
+    let temp = arr[i]
+    arr[i] = arr[arr.length - i - 1]
+    arr[arr.length - i - 1] = temp
 }
-
-
-console.log(c);
-
+console.log(arr)
