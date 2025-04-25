@@ -1,11 +1,12 @@
 // let firstname="fasalu";
+// let secondname="adler"
 // function getname(){
 //     let firstname="gafoor";
 //     console.log(firstname);
 // }
 // getname()
-// console.log(firstname);
 
+// console.log(firstname);
 // const person={
 //     firstname:"fasalu",
 //     secondname:"gafoor",
@@ -14,6 +15,8 @@
 //     }
 // }
 // console.log(person.fullname);
+
+
 
 
 // objects, arrays, dates, maps, sets, intarrays, floatarrays, promises, and more.
@@ -61,12 +64,12 @@
 
 // console.log(person);
 
-const person = {
-    firstName:"John",
-    lastName:"Doe",
-    age:50,
-     eyeColor:"blue"
-  }
+// const person = {
+//     firstName:"John",
+//     lastName:"Doe",
+//     age:50,
+//      eyeColor:"blue"
+//   }
   
 
 //   const x = person;
@@ -74,4 +77,9 @@ const person = {
 //   console.log(x)
 //   x.age = 10;
 
+
+// let a=10
+// console.log(a);
+//   a=3
+// console.log(a);
 

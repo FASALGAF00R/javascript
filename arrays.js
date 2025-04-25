@@ -84,19 +84,19 @@
 // console.log(arr);
 
 
-// const arr = [1,-6,7,8,11]
-// var L = arr[0]
-// var sl
-// for (var i = 0; i < arr.length; i++) {
-//     if (arr[i] > L) {
-//         sl=L 
-//         L = arr[i]
-//     }else if(sl<L && arr[i] >sl ){
-//         sl=arr[i]
-//     }
-// } 
+const arr = [1,-6,7,8,11]
+var L = arr[0]
+var sl
+for (var i = 0; i < arr.length; i++) {
+    if (arr[i] > L) {
+        sl=L 
+        L = arr[i]
+    }else if(sl<L && arr[i] >sl ){
+        sl=arr[i]
+    }
+} 
 
-// console.log(sl);
+console.log(sl);
 
 
 
@@ -202,20 +202,77 @@
 
 
 
-const arr = [1, 3, 2, 5, 9]
+// const arr = [1, 3, 2, 5, 9]
 
-for (let i = 0; i < arr.length; i++) {
-    if (arr[i] % 3 == 0) {
-        for (let j = i; j < arr.length; j++) {
-            arr[j] = arr[j + 1]
+// for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] % 3 == 0) {
+//         for (let j = i; j < arr.length; j++) {
+//             arr[j] = arr[j + 1]
+//         }
+//         arr.length--
+//     }
+// }
+
+// for (let i = 0; i < arr.length / 2; i++) {
+//     let temp = arr[i]
+//     arr[i] = arr[arr.length - i - 1]
+//     arr[arr.length - i - 1] = temp
+// }
+// console.log(arr)
+
+// const a = [1, 2, 7, 3, 5]
+// for (let i = 0; i < a.length; i++) {
+//     if (a[i] % 3 == 0) {
+//         for(let j=i;j<a.length;j++){
+//         const temp = a[j - 1]
+//         a[j - 1] = a[i]
+//         a[i] = a[j + 1]
+//         }
+//         a.length--;
+//         i--;
+//     }
+// }
+// console.log(a);
+
+// const a = [1, 3, 79, 4, 5];
+// let n = a.length;
+
+// for (let i = 0; i < n; i++) {
+//     if (a[i] % 3 === 0) {       
+//         for (let j = i - 1; j < n - 1; j++) {
+//             a[j] = a[j + 1];
+//         }
+//         n--; 
+//         i--; 
+//         for (let j = i + 1; j < n - 1; j++) {
+//             a[j] = a[j + 1];
+//         }
+//         n--; 
+//         break; 
+//     }
+// }
+// for (let i = 0; i < n; i++) {
+//     console.log(a[i]);
+// }
+
+
+const a = [1, 3, 3, 4, 5]
+for (let i = 0; i < a.length; i++) {
+    for (let k = i + 1; k < a.length; k++) {
+        if (a[i] == a[k]) {
+            for (let j = i; j < a.length; j++) {
+                a[j] = a[j + 1]
+            }
+            i--;
+            a.length--;
+
         }
-        arr.length--
     }
 }
 
-for (let i = 0; i < arr.length / 2; i++) {
-    let temp = arr[i]
-    arr[i] = arr[arr.length - i - 1]
-    arr[arr.length - i - 1] = temp
-}
-console.log(arr)
+
+
+console.log(a);
+
+
+
