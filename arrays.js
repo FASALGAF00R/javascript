@@ -84,19 +84,19 @@
 // console.log(arr);
 
 
-const arr = [1,-6,7,8,11]
-var L = arr[0]
-var sl
-for (var i = 0; i < arr.length; i++) {
-    if (arr[i] > L) {
-        sl=L 
-        L = arr[i]
-    }else if(sl<L && arr[i] >sl ){
-        sl=arr[i]
-    }
-} 
+// const arr = [1,-6,7,8,11]
+// var L = arr[0]
+// var sl
+// for (var i = 0; i < arr.length; i++) {
+//     if (arr[i] > L) {
+//         sl=L 
+//         L = arr[i]
+//     }else if(sl<L && arr[i] >sl ){
+//         sl=arr[i]
+//     }
+// } 
 
-console.log(sl);
+// console.log(sl);
 
 
 
