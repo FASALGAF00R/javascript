@@ -33,13 +33,13 @@
 // const arr=[1,2,2,4,5]
 // let flag
 // for(let i=0;i<arr.length;i++){
-//     flag=0
+//     flag=1
 //     for(let j=0;j<arr.length;j++){
 //         if(arr[i]===arr[j] && i!=j){
 //             flag++       
 //         }
 //     } 
-//     if(flag==0){
+//     if(flag==1){
 //         console.log(arr[i]);   
 //     }
 // }
@@ -256,23 +256,69 @@
 // }
 
 
-const a = [1, 3, 3, 4, 5]
-for (let i = 0; i < a.length; i++) {
-    for (let k = i + 1; k < a.length; k++) {
-        if (a[i] == a[k]) {
-            for (let j = i; j < a.length; j++) {
-                a[j] = a[j + 1]
-            }
-            i--;
-            a.length--;
+// const a = [1, 3, 3, 4, 5]
+// for (let i = 0; i < a.length; i++) {
+//     for (let k = i + 1; k < a.length; k++) {
+//         if (a[i] == a[k]) {
+//             for (let j = i; j < a.length; j++) {
+//                 a[j] = a[j + 1]
+//             }
+//             i--;
+//             a.length--;
 
-        }
-    }
-}
-
-
-
-console.log(a);
+//         }
+//     }
+// }
 
 
+
+// console.log(a);
+
+// const a=[1,2,3,0,-5]
+
+// function check(a){
+//     for(let i=0;i<a.length;i++){
+//         if(a[i]>a[i+1]){
+//             return false;
+//         }
+//     }
+//     return true
+// }
+
+// console.log(check(a));
+
+// pushing of elements to the end of the array
+
+// const a = [0, 1, 0, 3, 12]
+// const c = []
+// for (let i = 0; i < a.length; i++) {
+//     if (a[i] != 0) {
+//         c.push(a[i])
+//     }
+// } 
+// for (let j = 0; j < a.length; j++) {
+//     if(a[j]==0){
+//         c.push(a[j])
+//     }
+
+// }
+// console.log(c);
+
+// next approach
+
+// const a = [0, 1, 0, 3, 12];
+
+// let j = 0;
+
+// for (let i = 0; i < a.length; i++) {
+//     if (a[i] != 0) {
+//         // swap a[i] with a[j]
+//         let temp = a[i];
+//         a[i] = a[j];
+//         a[j] = temp;
+//         j++;
+//     }
+// }
+
+// console.log(a); 
 
