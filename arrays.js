@@ -270,8 +270,6 @@
 //     }
 // }
 
-
-
 // console.log(a);
 
 // const a=[1,2,3,0,-5]
@@ -322,3 +320,84 @@
 
 // console.log(a); 
 
+// const a=[3,3,3,5,7]
+// for(let  i=0;i<a.length;i++){
+// if(a[i]%2==1&&a[i+1]%2==1){
+// for(k=i;k<a.length;k++){
+//     a[k]=a[k+1]
+// }
+// a.length--
+// i--;
+// }
+// }
+// console.log(a);
+
+
+const a=[5,6,2,1]
+var l=a[0]
+var s=a[0]
+var sl
+var ss
+for(let i=0;i<a.length;i++){
+    if(a[i]>l){
+        sl=l
+        l=a[i]
+    }else if(a[i]<l&&a[i]>sl){
+        sl=a[i]
+    }
+    if(a[i]<s){
+        ss=s
+        s=a[i]
+    }else if(ss>s && a[i] >s){
+                ss=a[i]
+            }
+
+}
+console.log(sl);
+console.log(ss);
+
+
+// const a = [1000, 2000, 5000, 6000, 500]
+// var l1 = a[0]
+// var l2
+// var l3 = a[0]
+// var ar = []
+
+// for (let i = 0; i < a.length; i++) {
+//     if (a[i] > l1) {
+//         l2 = l1
+//         l1 = a[i]
+//     }else if(a[i]>l2&&a[i]<l1){
+//         l2=a[i]
+//     }
+// }
+//     for (let j = 0; j < a.length; j++) {
+//         if (a[j] < l2) {
+//             ar.push(a[j])
+//         }
+//     }
+
+// for (let k = 0; k < ar.length; k++) {
+//     if (ar[k] > l3) {
+//         l3 = ar[k]
+//     }
+// }
+// console.log(l1);
+// console.log(l2);
+// console.log(l3);
+
+
+// const a=[1,2,3,4,5]
+// var vl=6
+// for(let i=0;i<a.length;i++){
+//     if(i==3){
+//         a[i]=vl
+//     }
+// }
+
+// console.log(a);
+
+
+// var s='hello world'
+// var b=s.split(' ')
+// console.log(b[1],b[0]);

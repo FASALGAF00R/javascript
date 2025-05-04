@@ -10,18 +10,18 @@
 /* 1 em =16px
 rem,% */
 
-  /* flex-wrap: wrap; */
-  /* justify-content: center;
+/* flex-wrap: wrap; */
+/* justify-content: center;
   align-items: center; */
-  /* align-content:flex-end ; */
+/* align-content:flex-end ; */
 
 
-.flexbox-container{
 
+.flexbox-container {
     display: flex;
-  justify-content: center;
+    justify-content: space-evenly  ;
 
-  
+
 }
 
 
@@ -30,25 +30,26 @@ rem,% */
     margin: 30px;
     border: 10px solid rgb(0, 0, 0);
     background-color: rgb(107, 182, 248);
+
+
+
 }
 
 
 .flexbox-item-1 {
     min-height: 100px;
-    flex-shrink:0;
-    order:3
-
+    flex-shrink: 0;
+    order: 3
 }
 
 .flexbox-item-2 {
-    min-height: 200px;
+    min-height: 300px;
     align-self: center;
-    order:2
+    order: 2
 }
 
 .flexbox-item-3 {
-    min-height: 300px;
-    flex-grow: 1;
+    min-height: 200px;
+    flex-grow: 0;
     order: 1;
 }
-
