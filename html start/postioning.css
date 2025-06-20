@@ -1,0 +1,31 @@
+.parent{
+    background-color: brown;
+}
+
+
+.child{
+   width:100px;
+   margin: 20px;
+
+}
+
+
+.child-one{
+background-color: aqua;
+position: absolute;
+}
+
+
+.child-two{
+background-color: blue;
+
+}
+
+
+
+.child-three{
+background-color: blueviolet;
+}
+
+/* postion absolute */
+/* position sticky */
