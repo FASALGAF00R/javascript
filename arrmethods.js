@@ -23,3 +23,12 @@ const res=ar.filter((el)=>el%2==0)
 console.log(res);
 const g=ar.reduce((acc,db)=>acc+db)
 console.log(g);
+
+
+// const n = [1, 2, 3, 4, 5];
+// const fEven = n.find((num) => num % 2 === 0);
+// console.log(fEven);
+
+const n = [1, 2, 3, 4, 5];
+const hasNeg = n.every((num) => num > 0);
+console.log(hasNeg);
