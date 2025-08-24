@@ -1,5 +1,4 @@
 
-// }
 // function multiply(a,b,callback) {
 //     let result =a*b;
 //     callback(result);
@@ -33,19 +32,6 @@
 // }
 
 
-
-// function myFirst() {
-//     myDisplayer("Hello");
-//   }
-
-//   function mySecond() {
-//    myDisplayer("Goodbye");
-
-//   }
-
-
-// console.log(  myFirst());
-// console.log(mySecond());
 
 
 // function* generating(){
@@ -143,6 +129,17 @@
 
 // console.log(proxy1.age);
 // console.log(proxy1.name);
+
+console.log("hi");
+function a(call) {
+    setTimeout(() => {
+        console.log("set time out");
+    }, 5000)
+    call()  
+}
+console.log(a(() => { console.log("callback function") }))
+console.log("hello");
+
 
 
 

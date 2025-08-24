@@ -543,3 +543,20 @@
 
 
 
+const a="hi"
+const b="fasal"
+console.log(`my name id ${a +" "+ b}`);
+
+const c=[1,2,3,4,5]
+const g=c.slice(1,4)
+console.log(g);
+const h=c.splice(1,2,6,7)
+console.log(c);
+
+const f=[1,2,3,4,5]
+f.unshift(0)
+console.log(f);
+
+
+
+
