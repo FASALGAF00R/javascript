@@ -1,17 +1,17 @@
-let a = new Promise ((resolve,reject)=>{
-    let a=1+7
-    if (a==2){
-        resolve('success');
-    }else{
-        reject('failure');
-    }
-});
+// let a = new Promise ((resolve,reject)=>{
+//     let a=1+7
+//     if (a==2){
+//         resolve('success');
+//     }else{
+//         reject('failure');
+//     }
+// });
 
-a.then((message)=>{
-    console.log('completed'+message)
-}).catch((message)=>{
-    console.log('not completed'+message)
-})
+// a.then((message)=>{
+//     console.log('completed'+message)
+// }).catch((message)=>{
+//     console.log('not completed'+message)
+// })
 
 // a.then((message)=>{
 //     console.log('yes'+message);
@@ -21,29 +21,57 @@ a.then((message)=>{
 
 // promise all
 
-Promise.all([
-    Promise.resolve("Task 1 completed"),
-    Promise.resolve("Task 2 completed"),
-    Promise.reject("Task 3 failed")
-])
-    .then((results) => console.log(results))
-    .catch((error) => console.error(error));
+// const promise1=new Promise((resolve,reject)=>{
+//         resolve("apple")     
+// })
+
+// const promise2=new Promise((resolve,reject)=>{
+//         reject("reject")  
+// })
+
+// const promisereject=new Promise((resolve,reject)=>{
+//         resolve("mango")     
+// })
+
+// const result=Promise.all([
+//     promise1,promise2,promisereject
+// ])
+//     .then((results) => console.log(results))
+//     .catch((error) => console.error(error));
 
 // promise.race
 
-Promise.race([
-    new Promise((resolve) =>
-        setTimeout(() =>
-            reject("Task 1 finished"), 1000)),
-    new Promise((resolve) =>
-        setTimeout(() =>
-            resolve("Task 2 finished"), 500)),
-]).then((result) =>
-    console.log(result)).catch((error)=>{
-        console.log("error");
+// Promise.race([
+//     new Promise((resolve) =>
+//         setTimeout(() =>
+//             reject("Task 1 finished"), 1000)),
+//     new Promise((resolve) =>
+//         setTimeout(() =>
+//             resolve("Task 2 finished"), 500)),
+// ]).then((result) =>
+//     console.log(result)).catch((error)=>{
+//         console.log("error");
         
-    })
+//     })
     
+
+// const promise1=new Promise((resolve,reject)=>{
+//     setTimeout(() => {
+//         resolve("succ")
+//     }, 5000);
+// })
+
+// const promise2=new Promise((resolve,reject)=>{
+//     setTimeout(() => {    
+//         resolve("su")
+//     }, 500);
+// })
+
+// const result=Promise.any([
+//     promise1,promise2
+// ])
+//     .then((results) => console.log(results))
+//     .catch((error) => console.error(error));
 
 
 
@@ -65,9 +93,16 @@ Promise.race([
 
 
 
+const a=new Promise ((res,rej)=>{
+    res("welcome fasla")
+})
 
+const result=async ()=> {
+const response=await a
+console.log(response);
+}
 
-
+result()
 
 
 
