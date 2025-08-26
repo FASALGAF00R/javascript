@@ -93,16 +93,16 @@
 
 
 
-const a=new Promise ((res,rej)=>{
-    res("welcome fasla")
-})
+// const a=new Promise ((res,rej)=>{
+//     res("welcome fasla")
+// })
 
-const result=async ()=> {
-const response=await a
-console.log(response);
-}
+// const result=async ()=> {
+// const response=await a
+// console.log(response);
+// }
 
-result()
+// result()
 
 
 
@@ -169,3 +169,17 @@ result()
 //   };
   
 //   console.log(dog['friends'])
+
+
+
+
+
+
+console.log('1: Sync Start'); 
+setTimeout(() => console.log('2: Timer 1'), 0); 
+setImmediate(() => console.log('3: Immediate 1')); 
+Promise.resolve().then(() => console.log('4: Promise 1')); 
+process.nextTick(() => console.log('5: NextTick 1'));
+console.log('6: Sync End');
+setTimeout(() => console.log('7: Timer 2'), 10); 
+Promise.resolve().then(() => console.log('8: Promise 2'));
