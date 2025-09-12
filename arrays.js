@@ -151,14 +151,78 @@
 
 
 
-const a = [1, 2, 3, 4, 5]
-function factorial(n) {
-    if (n == 1) {
-        return 1
-    }
-    return n * (factorial(n - 1))
+// const a = [1, 2, 2, 4, 5]
+// function factorial(n) {
+//     if (n == 1) {
+//         return 1
+//     }
+//     return n * (factorial(n - 1))
+// }
+// const c = a.map(factorial)
+// console.log(c);
+
+
+// const a = [1, 2, 2, 4, 5]
+// for (let i = 0; i < a.length; i++) {
+//     for (let j = i + 1; j < a.length; j++) {
+//         if (a[i] == a[j]) {
+//             for(let k=j;k<a.length;k++){
+//                 a[k]=a[k+1]
+//             }
+//             a.length--
+//             +
+//             i--
+//         }
+
+//     }
+
+// }``
+// console.log(a);
+
+
+// const a = [1, 5, 4, 3, 4]
+// let target=8
+// let c=[]
+// for(let i=0;i<a.length;i++){
+//     for(let j=i+1;j<a.length;j++){
+//         let result=a[i]+a[j]
+//         if(result==target){
+//             c.push([a[i],a[j]])
+//         }
+//     }
+// }
+
+// console.log(c);
+
+// const a = [1, 0, 0, 4, 4]
+// var pos=0
+// for (let i = 0; i < a.length; i++) {
+//     if(a[i] !== 0) {
+//         a[pos]=a[i]
+//         pos++
+//     }
+    
+// }
+// for (let i = pos; i < a.length; i++) {
+//     a[i] = 0;
+// }
+
+// console.log(a);
+
+const a = [1,2,3,4,5,6,7,8,9,10];
+let k = 4;
+let c = [];
+
+// Add the last k elements first
+for (let i = a.length - k; i < a.length; i++) {
+    c.push(a[i]);
 }
-const c = a.map(factorial)
+
+// Add the first part of the array
+for (let i = 0; i < a.length - k; i++) {
+    c.push(a[i]);
+}
+
 console.log(c);
 
 
