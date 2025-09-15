@@ -2,7 +2,6 @@ const a=[1,2,6,4,5]
 a.sort()
 console.log(a)
 
- 
 // let cars = ['Benz', 'Innova', 'Breeza', 'Etios', 'Dzire'];
 // let new_cars = cars.slice(2);
 // console.log("cars :", cars);

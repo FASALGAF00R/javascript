@@ -209,20 +209,145 @@
 
 // console.log(a);
 
-const a = [1,2,3,4,5,6,7,8,9,10];
-let k = 4;
-let c = [];
+// const a = [1,2,3,4,5,6,7,8,9,10];
+// let k = 4;
+// let c = [];
 
-// Add the last k elements first
-for (let i = a.length - k; i < a.length; i++) {
-    c.push(a[i]);
+// for (let i = a.length - k; i < a.length; i++) {
+//     c.push(a[i]);
+// }
+
+// for (let i = 0; i < a.length - k; i++) {
+//     c.push(a[i]);
+// }
+
+// console.log(c);
+
+
+// function reversearray(arr){
+//     if(arr.length<=1){
+//         return arr
+//     }
+
+//     return reversearray(arr.slice(1)).concat(arr[0])
+
+// }
+
+// const arr=[1,2,3,4,5]
+// const res=reversearray(arr)
+// console.log(res);
+
+
+// const s='leveluuu'
+// const c=s.split('')
+
+// function a(c){
+//     for(let i=0;i<c.length/2;i++){
+//         if(c[i]==c[c.length-1-i]){
+//             return true
+//         }else{
+//             return false
+//         }
+//     }
+// }
+// const res=a(c)
+// console.log(res);
+
+
+// const s='level'
+// const c=s.split('')
+
+// function palindrome(c){
+//     if(c.length<=1){
+//         return true
+//     }
+//     if(c[0]==c[c.length-1]){
+//         return palindrome(c.slice(1,-1))
+//     }else{
+//         return false
+//     }
+
+// }
+// console.log(palindrome(c));
+
+
+// const num=[1,2,3,4,5]
+// var fact=1
+//     for (i = 1; i <= num.length; i++) {
+//         fact =fact*i;
+//     }
+//     console.log(fact)
+
+
+// const num=[1,2,3,4,5]
+// function factorial (num){
+//    if(num==1||num ==0){
+//        return 1
+//    }
+
+//    return  num * factorial(num-1)
+
+// }
+// const factorialarray=num.map(n=>factorial(n))
+// console.log( factorialarray);
+
+
+
+
+
+// let arr = [1, 2, 3, 2, 3, 4, 5];
+
+// const count = {};
+
+// for (let i = 0; i < arr.length; i++) {
+//     let ele = arr[i];
+//     if (count[ele]) {
+//         count[ele] += 1;
+//     } else {
+//         count[ele] = 1;
+//     }
+// }
+// console.log(count);
+
+// find square of an array elements
+// const a=[1,2,3,4,5]; 
+// const  square=function(a){
+//     const output=[];
+//     for(var i=0;i<a.length;i++){
+//         output.push(a[i]*2);
+//     }
+//     return output;
+// }
+// console.log(square(a));
+
+
+// const a=[1,2,3,4,5]
+// const b=[6,7,8,9,10]
+// var c=[]
+// for(let i=0;i<a.length;i++){
+//     c.push(a[i])
+// }
+
+// for(let j=0;j<b.length;j++){
+// c.push(b[j])
+// }
+// console.log(c);
+
+const str="pwwkew"
+let set=new Set()
+var length=0
+var left=0
+
+for(let i=0;i<str.length;i++){
+    while(set.has(str[i])){
+        set.delete(str[i])
+        left ++
+    }
+    
+    set.add(str[i])
+    length=Math.max(length,i-left +1)
+    
 }
-
-// Add the first part of the array
-for (let i = 0; i < a.length - k; i++) {
-    c.push(a[i]);
-}
-
-console.log(c);
-
+console.log(set);
+console.log(length);
 
