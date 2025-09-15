@@ -340,7 +340,7 @@ var left=0
 
 for(let i=0;i<str.length;i++){
     while(set.has(str[i])){
-        set.delete(str[i])
+        set.delete(str[left])
         left ++
     }
     
