@@ -333,21 +333,28 @@
 // }
 // console.log(c);
 
-const str="pwwkew"
-let set=new Set()
-var length=0
-var left=0
+// const str="pwwkew"
+// let set=new Set()
+// var length=0
+// var left=0
 
-for(let i=0;i<str.length;i++){
-    while(set.has(str[i])){
-        set.delete(str[left])
-        left ++
-    }
+// for(let i=0;i<str.length;i++){
+//     while(set.has(str[i])){
+//         set.delete(str[left])
+//         left ++
+//     }
     
-    set.add(str[i])
-    length=Math.max(length,i-left +1)
+//     set.add(str[i])
+//     length=Math.max(length,i-left +1)
     
+// }
+// console.log(set);
+// console.log(length);
+
+
+var a=[]
+for(let i=1;i<6;i++){
+    a[a.length]=i
 }
-console.log(set);
-console.log(length);
+console.log(a);
 
