@@ -201,7 +201,7 @@
 //         a[pos]=a[i]
 //         pos++
 //     }
-    
+
 // }
 // for (let i = pos; i < a.length; i++) {
 //     a[i] = 0;
@@ -343,18 +343,77 @@
 //         set.delete(str[left])
 //         left ++
 //     }
-    
+
 //     set.add(str[i])
 //     length=Math.max(length,i-left +1)
-    
+
 // }
 // console.log(set);
 // console.log(length);
 
 
-var a=[]
-for(let i=1;i<6;i++){
-    a[a.length]=i
-}
-console.log(a);
+// var a = []
+// for (let i = 1; i < 6; i++) {
+//     a[a.length] = i
+// }
+// console.log(a);
 
+// create a 2 dimensional array with m row and n colums
+
+words1 = ["leetcode","is","leetcode","is","amazing","and","fantastic"]
+words2 = ["leetcode","is","leetcode","is","fantastic"]
+
+var count=0
+for (let i = 0; i < words1.length; i++) {
+    let flag1 = 0
+    let flag2 = 0
+    for (let j = 0; j < words1.length; j++) {
+        if (words1[i] == words1[j]) {
+            flag1++
+        }
+    }
+
+    for (let k = 0; k < words2.length; k++) {
+        if (words1[i] == words2[k]) {
+            flag2++
+        }
+    }
+    if (flag1 == flag2) {
+    count++;
+    }
+
+}
+console.log(count,"count");
+
+
+
+words1 = ["pay", "attention", "practice", "attend"]
+words2 = ["attention", "practice", "pay", "pay"]
+
+var count1 = 0
+var count2 = 0
+for (let i = 0; i < words1.length; i++) {
+    let flag1 = 1
+    for (let j = i + 1; j < words1.length; j++) {
+        if (words1[i] == words1[j]) {
+            flag1++
+            if (flag1 == 1) {
+                count1++
+            }
+        }
+    }
+
+    for (let k = 0; k < words2.length; k++) {
+        let flag2 = 0
+        if (words1[i] == words2[k]) {
+            flag2++
+            if (flag2 == 1) {
+                count2++
+            }
+        }
+        if (flag1 == flag2) {
+                     console.log(count2, "count");
+     
+                 }
+    }
+}
