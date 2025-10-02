@@ -31,9 +31,17 @@
 
 console.log(a);
 var a=10
-var a=9;
 console.log(a);
 
+console.log(b);
 
+let b="hi"
 
+console.log(b)
+
+greet(); 
+
+function greet() {
+  console.log("Hello!");
+}
 

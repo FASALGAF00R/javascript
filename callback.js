@@ -25,13 +25,6 @@
 // }
 // a()
 
-// async function fetch(){
-//     const result= await ("hfdggggggg")
-//     const data= await result.json();
-//     return data;
-// }
-
-
 
 
 // function* generating(){
@@ -130,16 +123,19 @@
 // console.log(proxy1.age);
 // console.log(proxy1.name);
 
-console.log("hi");
-function a(call) {
-    setTimeout(() => {
-        console.log("set time out");
-    }, 5000)
-    call()  
-}
-console.log(a(() => { console.log("callback function") }))
-console.log("hello");
+// console.log("hi");
+// function a(call) {
+//     setTimeout(() => {
+//         console.log("set time out");
+//     }, 5000)
+//     call()  
+// }
+// console.log(a(() => { console.log("callback function") }))
+// console.log("hello");
 
 
 
+
+const c={}
+console.log(typeof c,"//");
 

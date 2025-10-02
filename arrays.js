@@ -411,14 +411,27 @@
 // }
 // console.log(count, "count");
 
-var nums = [-1,-2,3,4]
-var k = 2
-const a=nums.sort((a,b)=>b-a)
-var ans=[]
-for(let i=0;i<k;i++){
-    if(a[i]>0){
-        ans[ans.length]=a[i]
-    }
-}
+// var nums = [-1,-2,3,4]
+// var k = 2
+// const a=nums.sort((a,b)=>b-a)
+// var ans=[]
+// for(let i=0;i<k;i++){
+//     if(a[i]>0){
+//         ans[ans.length]=a[i]
+//     }
+// }
 
-console.log(ans);
+// console.log(ans);
+// for(let i=5;i>0;i--){
+//     let line = "";
+//     for(let j=i;j<=i;j--){
+//         line+=j
+
+//     }
+//     console.log(line);
+    
+// }
+
+const c=[]
+console.log(typeof c,"//");
+

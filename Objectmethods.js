@@ -2,6 +2,14 @@
 // const keys = Object.keys(obj);
 // console.log(keys); 
 
+const a={
+    name:"fasal",
+    age:23
+}
+const k=Object.entries(a)
+console.log(k);
+
+
 
 
 // const obj = { a: 1, b: 2, c: 3 };
@@ -9,28 +17,28 @@
 // console.log(values);
 
 
-// const obj = { a: 1, b: 2, c: 3 };
-// const entries = Object.entries(obj);
-// console.log(entries); 
+const obj = { a: 1, b: 2, c: 3 };
+const entries = Object.entries(obj);
+console.log(entries); 
 
 
 // const target = { a: 1, b: 2 };
-// const source = { b: 3, c: 4 };
+// const source = { c: 3, d: 4 };
 // const merged = Object.assign( target,source);
-// console.log(merged); // Output: { a: 1, b: 3, c: 4 }
+// console.log(merged); 
 
 
-// changes is not possible new adding not possible
+// changes is not possible new adding not possible delete not possible
 
 // const obj = { a: 1, b: 2 };
 // Object.freeze(obj);
 // delete obj.a
 // obj.b = 3; 
 // obj.c=8
-// console.log(obj); // Output: { a: 1, b: 2 }
+// console.log(obj); 
 
 
-// changes is possible new adding not possible
+// changes is possible new adding not possible delete not possible
 
 // const obj = { a: 1, b: 2 };
 // Object.seal(obj);

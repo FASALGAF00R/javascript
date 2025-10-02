@@ -15,13 +15,13 @@ var b=["f","r","t","y"]
 b.splice(1,2)
 console.log(b);
 
-const  ar=[1,2,3,4,5]
-const ans=ar.map(vl=>(vl*vl))
-console.log(ans);
-const res=ar.filter((el)=>el%2==0)
-console.log(res);
-const g=ar.reduce((acc,db)=>acc+db)
-console.log(g);
+// const  ar=[1,2,3,4,5]
+// const ans=ar.map(vl=>(vl*vl))
+// console.log(ans);
+// const res=ar.filter((el)=>el%2==0)
+// console.log(res);
+// const g=ar.reduce((acc,db)=>acc+db)
+// console.log(g);
 
 
 // const n = [1, 2, 3, 4, 5];
@@ -31,3 +31,25 @@ console.log(g);
 const n = [1, 2, 3, 4, 5];
 const hasNeg = n.every((num) => num > 0);
 console.log(hasNeg);
+
+console.log(Array.isArray(n));
+
+// const m="fasal"
+// var t=m.split('')
+// const h=t.reverse().join('')
+// console.log(h);
+
+
+// const a="hi"
+// const b="fasal"
+// console.log(`my name id ${a +" "+ b}`);
+
+const c=[1,2,3,4,5]
+const g=c.slice(0,3)
+console.log(g,"slice");
+const h=c.splice(1,2,6,7)
+console.log(c,"splice");
+
+const f=[1,2,3,4,5]
+f.unshift(0)
+console.log(f);
