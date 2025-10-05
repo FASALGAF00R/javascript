@@ -422,16 +422,19 @@
 // }
 
 // console.log(ans);
-// for(let i=5;i>0;i--){
-//     let line = "";
-//     for(let j=i;j<=i;j--){
-//         line+=j
-
-//     }
-//     console.log(line);
+let rows = 5;
+for (let i = 1; i <= rows; i++) {
+       var pattern = '';
+      for (let j = 1; j <= i; j++) {
+         pattern += j + ' ';
+      }
+      pattern += '\n';
+   }
+   console.log(pattern);
     
-// }
 
-const c=[]
-console.log(typeof c,"//");
+
+
+
+
 
